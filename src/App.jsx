@@ -10,8 +10,27 @@
 //? Each JSX tags needs to be closed. You can use self-closing tags for elements that don't have children, eg., <img src="url" />
 
 
-export const App = () =>{
-  return <h2>Name: The Railway Man</h2>,
-  <h3>Rating: 8.5</h3>
-  <p>After a deadly gas leaks from a factory in Bhopal, brave railway workers risk their lives to save others in the face of an unspeakable disaster.</p>
-}
+export const App = () => {
+
+  return (
+    <div>
+      <NetflixSeries />
+      <NetflixSeries />
+      <NetflixSeries />
+      <NetflixSeries />
+    </div>
+  )
+};
+
+const NetflixSeries = () => {
+  return (
+    <div>
+      <div>
+        <img src="The Railway Man jpeg.jfif" alt="movie" width="20%" height="10%" />
+      </div>
+      <h2>Name: The Railway Man</h2>
+      <h3>Rating: 8.5</h3>
+      <p>Summary: After a deadly gas leaks from a factory in Bhopal, brave railway workers risk their lives to save others in the face of an unspeakable disaster.</p>
+    </div>
+  )
+};
