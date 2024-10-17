@@ -3,6 +3,8 @@
 // import React from "react"
 // React.createElement('h1', null, "Hello, World!")
 
+// import {Fragment } from "react";
+
 // console.log(React.createElement('h1', null, "Hello, World!"))
 
 //? Each JSX expressions must have one parent element, which means if you try to return multiple elements, React will throw an error.
@@ -13,12 +15,12 @@
 export const App = () => {
 
   return (
-    <div>
+    <>
       <NetflixSeries />
       <NetflixSeries />
       <NetflixSeries />
       <NetflixSeries />
-    </div>
+    </>
   )
 };
 
@@ -34,3 +36,8 @@ const NetflixSeries = () => {
     </div>
   )
 };
+
+
+      // React Fragments:- It allow components to return multiple elements without adding extra nodes to the DOM.
+            // import { Fragment } from "react";
+            // return <Fragment>//</Fragment>
