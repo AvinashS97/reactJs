@@ -4,7 +4,8 @@
 // React.createElement('h1', null, "Hello, World!")
 // console.log(React.createElement('h1', null, "Hello, World!"))
 
-import NetflixSeries, {Footer, Header} from "./components/NetflixSeries";
+// import NetflixSeries, {Footer, Header} from "./components/NetflixSeries";
+import NetflixSeries from "./components/NetflixSeries";
 
 
 // import {Fragment } from "react";
@@ -17,7 +18,6 @@ import NetflixSeries, {Footer, Header} from "./components/NetflixSeries";
 
 
 //! React Fragments:- It allow components to return multiple elements without adding extra nodes to the DOM.
-
 // import { Fragment } from "react";
 // return <Fragment>//</Fragment>
 
@@ -25,13 +25,9 @@ export const App = () => {
 
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <NetflixSeries />
-      <Footer />
-
-      {/* <NetflixSeries /> */}
-      {/* <NetflixSeries /> */}
-      {/* <NetflixSeries /> */}
+      {/* <Footer /> */}
 
     </>
   )
