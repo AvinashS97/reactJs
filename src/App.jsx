@@ -4,6 +4,8 @@
 // React.createElement('h1', null, "Hello, World!")
 // console.log(React.createElement('h1', null, "Hello, World!"))
 
+import NetflixSeries, {Footer, Header} from "./components/NetflixSeries";
+
 
 // import {Fragment } from "react";
 
@@ -23,7 +25,9 @@ export const App = () => {
 
   return (
     <>
+      <Header />
       <NetflixSeries />
+      <Footer />
 
       {/* <NetflixSeries /> */}
       {/* <NetflixSeries /> */}
@@ -42,98 +46,3 @@ export const App = () => {
 
 //* 3: Functions Calls
 //? Functions, especially those that return JSX, can be involved directly within your JSX.
-
-
-//! Conditionals in JSX
-
-const NetflixSeries = () => {
-  const name = "The Railway Men";
-  const rating = "8.5 / 10";
-  const summary = "After a deadly gas leaks from a factory in Bhopal, brave railway workers risk their lives to save others in the face of an unspeakable disaster.";
-  let age = 9;
-
-  const returnGenre = () => {
-    const genre = "Thrilling & Dangerous";
-    return genre;
-  }
-
-  // use conditional operator to show user can watch movie or not.
-  //? 1 ---> Not recommended B/c it violet the DRY (Do not Repeat Yourself ) Rule.
-
-  // if(age<16){
-  //   return (
-  //     <div>
-  //       <div>
-  //         <img src="The Railway Man jpeg.jfif" alt="movie" width="20%" height="10%" />
-  //       </div>
-  //       <h2>Name: {name} </h2>
-  //       <h3>Year: {2020+3} </h3>
-  //       <h3>Rating: {rating} </h3>
-  //       <p>Summary: {summary} </p>
-  //       <p>Genre: {returnGenre()}</p >
-  //       <button>Not Available</button>
-  //     </div>
-  //   )
-  // };
-
-
-  //? 2 Using Ternary Operators :- Inline COnditional Rendering
-
-  // return (
-  //   <div>
-  //     <div>
-  //       <img src="The Railway Man jpeg.jfif" alt="movie" width="20%" height="10%" />
-  //     </div>
-  //     <h2>Name: {name} </h2>
-  //     <h3>Year: {2020 + 3} </h3>
-  //     <h3>Rating: {rating} </h3>
-  //     <p>Summary: {summary} </p>
-  //     <p>Genre: {returnGenre()}</p >
-  //     {/* <button> {age >= 18 ? "Watch Now" : "Not Available"} </button> */}
-  //   </div>
-  // )
-
-  //? 3 Conditional Attributes:
-
-  // let canWatch = "Not Available";
-  // if(age>= 16) canWatch = "Watch Now" ;
-
-
-  // return (
-  //   <div>
-  //     <div>
-  //       <img src="The Railway Man jpeg.jfif" alt="movie" width="20%" height="10%" />
-  //     </div>
-  //     <h2>Name: {name} </h2>
-  //     <h3>Year: {2020 + 3} </h3>
-  //     <h3>Rating: {rating} </h3>
-  //     <p>Summary: {summary} </p>
-  //     <p>Genre: {returnGenre()}</p >
-  //     <button> {canWatch} </button>
-  //   </div>
-  // )
-
-
-
-
-  //? 4 
-
-  const canWatch = () => {
-    if (age >= 18 ) return "Watch Now";
-    return "Not Available"
-  }
-
-  return (
-      <>
-        <div>
-          <img src="The Railway Man jpeg.jfif" alt="movie" width="20%" height="10%" />
-        </div>
-        <h2>Name: {name} </h2>
-        <h3>Year: {2020 + 3} </h3>
-        <h3>Rating: {rating} </h3>
-        <p>Summary: {summary} </p>
-        <p>Genre: {returnGenre()}</p >
-        <button> {canWatch()} </button>
-      </>
-    )
-};
