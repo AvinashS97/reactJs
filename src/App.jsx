@@ -15,8 +15,6 @@ import NetflixSeries from "./components/NetflixSeries";
 
 //? Each JSX tags needs to be closed. You can use self-closing tags for elements that don't have children, eg., <img src="url" />
 
-
-
 //! React Fragments:- It allow components to return multiple elements without adding extra nodes to the DOM.
 // import { Fragment } from "react";
 // return <Fragment>//</Fragment>

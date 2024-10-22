@@ -1,4 +1,4 @@
-import data from "../api/data.json";
+import seriesData from "../api/seriesData.json";
 
 
 // const NetflixSeries = () => {
@@ -128,109 +128,25 @@ import data from "../api/data.json";
 
 //! Looping in JSX
 
-
-
 const NetflixSeries = () => {
   return (
     <ul>
-    <li>
-    <div>
-      <img src={data[0].img_url} alt="image" width="40%" height="40%" />
-    </div>
-    <h2>Name: {data[0].name} </h2>
-    <h3>Rating: {data[0].rating} </h3>
-    <p> Summary: {data[0].description} </p>
-    <p> Cast: {data[0].cast} </p>
-    <p> Genre: {data[0].genre}</p>
-    <a href= {data[0].watch_url} target="_blank">
-      <button>Watch Now</button>
-    </a>
-    </li>
-
-    <li>
-    <div>
-      <img src={data[1].img_url} alt="image" width="40%" height="40%" />
-    </div>
-    <h2>Name: {data[1].name} </h2>
-    <h3>Rating: {data[1].rating} </h3>
-    <p> Summary: {data[1].description} </p>
-    <p> Cast: {data[1].cast} </p>
-    <p> Genre: {data[1].genre}</p>
-    <a href= {data[1].watch_url} target="_blank">
-      <button>Watch Now</button>
-    </a>
-    </li>
-
-    <li>
-    <div>
-      <img src={data[2].img_url} alt="image" width="40%" height="40%" />
-    </div>
-    <h2>Name: {data[2].name} </h2>
-    <h3>Rating: {data[2].rating} </h3>
-    <p> Summary: {data[2].description} </p>
-    <p> Cast: {data[2].cast} </p>
-    <p> Genre: {data[2].genre}</p>
-    <a href= {data[2].watch_url} target="_blank">
-      <button>Watch Now</button>
-    </a>
-    </li>
-
-    <li>
-    <div>
-      <img src={data[3].img_url} alt="image" width="40%" height="40%" />
-    </div>
-    <h2>Name: {data[3].name} </h2>
-    <h3>Rating: {data[3].rating} </h3>
-    <p> Summary: {data[3].description} </p>
-    <p> Cast: {data[3].cast} </p>
-    <p> Genre: {data[3].genre}</p>
-    <a href= {data[3].watch_url} target="_blank">
-      <button>Watch Now</button>
-    </a>
-    </li>
-
-    <li>
-    <div>
-      <img src={data[4].img_url} alt="image" width="40%" height="40%" />
-    </div>
-    <h2>Name: {data[4].name} </h2>
-    <h3>Rating: {data[4].rating} </h3>
-    <p> Summary: {data[4].description} </p>
-    <p> Cast: {data[4].cast} </p>
-    <p> Genre: {data[4].genre}</p>
-    <a href= {data[4].watch_url} target="_blank">
-      <button>Watch Now</button>
-    </a>
-    </li>
-
-    <li>
-    <div>
-      <img src={data[5].img_url} alt="image" width="40%" height="40%" />
-    </div>
-    <h2>Name: {data[5].name} </h2>
-    <h3>Rating: {data[5].rating} </h3>
-    <p> Summary: {data[5].description} </p>
-    <p> Cast: {data[5].cast} </p>
-    <p> Genre: {data[5].genre}</p>
-    <a href= {data[5].watch_url} target="_blank">
-      <button>Watch Now</button>
-    </a>
-    </li>
-
-    <li>
-    <div>
-      <img src={data[6].img_url} alt="image" width="40%" height="40%" />
-    </div>
-    <h2>Name: {data[6].name} </h2>
-    <h3>Rating: {data[6].rating} </h3>
-    <p> Summary: {data[6].description} </p>
-    <p> Cast: {data[6].cast} </p>
-    <p> Genre: {data[6].genre}</p>
-    <a href= {data[6].watch_url} target="_blank">
-      <button>Watch Now</button>
-    </a>
-    </li>
-
+      {seriesData.map((curElem) => {
+        return ( 
+      <li key={curElem.id}>
+        <div>
+          <img src={curElem.img_url} alt={curElem.name} width="40%" height="40%" />
+        </div>
+        <h2>Name: {curElem.name} </h2>
+        <h3>Rating: {curElem.rating} </h3>
+        <p> Summary: {curElem.description} </p>
+        <p> Cast: {curElem.cast} </p>
+        <p> Genre: {curElem.genre}</p>
+        <a href= {curElem.watch_url} target="_blank">
+          <button>Watch Now</button>
+        </a>
+        </li>)
+      })}
     </ul>
   )
 }
