@@ -18,8 +18,8 @@ import { SeriesCard } from "./SeriesCard";
   //! Conditionals in JSX
 
   // use conditional operator to show user can watch movie or not.
+  
   //? 1 ---> Not recommended B/c it violet the DRY (Do not Repeat Yourself ) Rule.
-
   // if(age<16){
   //   return (
   //     <div>
@@ -38,7 +38,6 @@ import { SeriesCard } from "./SeriesCard";
 
 
   //? 2 Using Ternary Operators :- Inline COnditional Rendering
-
   // return (
   //   <div>
   //     <div>
@@ -53,8 +52,8 @@ import { SeriesCard } from "./SeriesCard";
   //   </div>
   // )
 
-  //? 3 Conditional Attributes:
 
+  //? 3 Conditional Attributes:
   // let canWatch = "Not Available";
   // if(age>= 16) canWatch = "Watch Now" ;
 

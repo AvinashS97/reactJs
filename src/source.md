@@ -19,7 +19,6 @@ console.log(React.createElement('h1', null, "Hello, World!"))
 //! React Fragments:- It allow components to return multiple elements without adding extra nodes to the DOM.
 
 
-
 //! Dynamic Values in JSX
 
 //* 1: Using Variables 
@@ -30,3 +29,23 @@ console.log(React.createElement('h1', null, "Hello, World!"))
 
 //* 3: Functions Calls
 //? Functions, especially those that return JSX, can be involved directly within your JSX.
+
+//! Conditionals in JSX
+
+// use conditional operator to show user can watch movie or not.
+//? 1 ---> Not recommended B/c it violet the DRY (Do not Repeat Yourself ) Rule.
+
+//? 2 Using Ternary Operators :- Inline COnditional Rendering
+
+//? 3 Conditional Attributes:
+
+//? 4 Using Conditional fns..
+
+
+//! Import and Exports
+  Default Export & Import ---> A File can have only one default export.
+
+  Named Export & Import ---> A file can have multiple named export. While importing it, the import names must be same as export name.
+
+  Mixed Export & Import ---> A file can have One Default & Multiple Named export called Mixed Export... 
+
