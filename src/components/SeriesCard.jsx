@@ -1,3 +1,4 @@
+
 export const SeriesCard = (props) =>{
     console.log(props);
     return ( 
