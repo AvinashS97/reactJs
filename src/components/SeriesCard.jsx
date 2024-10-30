@@ -1,6 +1,6 @@
 
-export const SeriesCard = (props) =>{
-    // console.log(props);
+export const SeriesCard = ({ data }) =>{
+    // console.log(data);
     
 // Without Desctructuring
 
@@ -23,9 +23,9 @@ export const SeriesCard = (props) =>{
 
             {/*  After Destructuring */}
             
-            const {id, img_url, name, rating, description, cast, genre, watch_url } = props.data; // Destructuring by storing the value from props.data...
+    const {id, img_url, name, rating, description, cast, genre, watch_url } = data; // Destructuring by storing the value from props.data...
     return ( 
-          <li key={props}>
+          <li >
             <div>
               <img src={img_url} alt={name} width="40%" height="40%" />
             </div>
@@ -39,5 +39,3 @@ export const SeriesCard = (props) =>{
             </a>
           </li>)
 }
-
-// 05:39
