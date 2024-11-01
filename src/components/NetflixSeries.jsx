@@ -16,7 +16,7 @@ import { SeriesCard } from "./SeriesCard";
 
   //! Conditionals in JSX
 
-  // use conditional operator to show user can watch movie or not.
+  // use conditional operator to show that user can watch movie or not.
   
   //? 1 ---> Not recommended B/c it violet the DRY (Do not Repeat Yourself ) Rule.
   // if(age<16){
