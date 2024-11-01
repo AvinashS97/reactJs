@@ -117,14 +117,16 @@ import { SeriesCard } from "./SeriesCard";
 // };
 
 
+// export const Header = () => {
+//     return <h1> Netflix Series</h1>
+// }
+
 // export default NetflixSeries;
 
-// export const Header = () => {
-  //   return <h1> Netflix Series</h1>
-  // }
-  // export const Footer = () => {
-    //   return <p>copyright @AvinashS97 </p>
+// export const Footer = () => {
+//       return <p>copyright @AvinashS97 </p>
 // }
+
 
 //! Looping in JSX
 

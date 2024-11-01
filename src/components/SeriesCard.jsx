@@ -23,7 +23,7 @@ export const SeriesCard = ({ data }) =>{
 
             {/*  After Destructuring */}
             
-    const {id, img_url, name, rating, description, cast, genre, watch_url } = data; // Destructuring by storing the value from props.data...
+    const {img_url, name, rating, description, cast, genre, watch_url } = data; // Destructuring by storing the value from props.data...
     return ( 
           <li >
             <div>
