@@ -49,3 +49,10 @@ console.log(React.createElement('h1', null, "Hello, World!"))
 
   Mixed Export & Import ---> A file can have One Default & Multiple Named export called Mixed Export... 
 
+//! Passing JSX as Props:-
+
+JSX value should be either an expression or a quoted JSX text.
+We can pass JSX as Props.
+  To access the child of parent, have to call it by {props.children}
+
+//! CSS Style in JSX
