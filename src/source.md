@@ -56,3 +56,4 @@ We can pass JSX as Props.
   To access the child of parent, have to call it by {props.children}
 
 //! CSS Style in JSX
+    Inline CSS
