@@ -1,3 +1,4 @@
+/* This file contains global CSS styles that apply to the entire application. It allow you to define styles thta should be applied globally, affecting all components within the app. */
 
 * {
   margin: 0;
@@ -10,7 +11,12 @@ html {
   font-size: 62.5%;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--heading-color);
   font-family: "Poppins", sans-serif;
   font-weight: 900;
@@ -20,7 +26,10 @@ h1 {
   font-size: 3.2rem;
 }
 
-p, li, a, label {
+p,
+li, 
+a, 
+label {
   font-size: 1.8rem;
   letter-spacing: 0.1rem;
   color: var(--para-color);
@@ -58,6 +67,7 @@ a {
 .grid {
   display: flex;
   gap: 0.6rem;
+  /* grid-template-columns: repeat(3, 1fr); */
 }
 
 .grid-two-cols {
