@@ -74,3 +74,12 @@ const style = {
   padding: '10px',
   z-index: 1,
 }
+
+# 3. Performance Considerations
+
+Defininh inline styles directly within he JSX can lead to performance issues a new object is created on every render. To avoid this, define styles outside of the render method or as constrants.
+
+const buttonStyle = {
+  backgroundColor: 'blue',
+  color:'white',
+}
