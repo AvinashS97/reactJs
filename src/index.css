@@ -27,8 +27,8 @@ h1 {
 }
 
 p,
-li, 
-a, 
+li,
+a,
 label {
   font-size: 1.8rem;
   letter-spacing: 0.1rem;
@@ -49,14 +49,14 @@ a {
 :root {
   --main-color: #0062ff;
   --supporting-color: #ebf3fe;
-  --font-color:#424242;
-  --bg-color:#ffffff;
+  --font-color: #424242;
+  --bg-color: #ffffff;
   --h-color: #0a043c;
-  --white-color:#ffffff;
+  --white-color: #ffffff;
   --test: #070101;
   --para-color: #504e4d;
   --btn-hover-bg-color: #003b99;
-  --btn-box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+  --btn-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .container {
@@ -67,7 +67,7 @@ a {
 
 .grid {
   display: grid;
-  gap: 0.6rem;
+  gap: 1.6rem;
 }
 
 .grid-two-cols {
