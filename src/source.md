@@ -56,4 +56,21 @@ We can pass JSX as Props.
   To access the child of parent, have to call it by {props.children}
 
 //! CSS Style in JSX
-    Inline CSS
+    Inline CSS ---> Inline styles are applied directly to the HTML elements via the style attribute. This approach uses JavaScript objects to define CSS properties and values.
+
+# 1. JavaScript Object Syntax
+
+Inline styles in React are specified using JavaScript objects. Property names are written in camelCase instead of the traditional Css kebab-case.
+
+const style = {
+  backgroundColor: 'blue',
+  fontSize: '16px',
+};
+
+# 2. Units
+For most numeric values, you need to specify units as a strong(e.g., '16px'). Some properties, like Z-Index, can take numeric values directly.
+
+const style = {
+  padding: '10px',
+  z-index: 1,
+}
