@@ -140,3 +140,5 @@ const NetflixSeries = () => {
   );
 };
 export default NetflixSeries;
+
+//07:26 Minutes
