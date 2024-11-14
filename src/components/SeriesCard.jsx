@@ -1,9 +1,9 @@
+// import styles from "./Netflix.module.css";
 
 export const SeriesCard = ({ data }) =>{
     // console.log(data);
     
 // Without Desctructuring
-
 //     return ( 
 //           <li key={props.key}>
 //             <div>
@@ -20,13 +20,11 @@ export const SeriesCard = ({ data }) =>{
 //             </li>)
 // }
 
-
             {/*  After Destructuring */}
             
     const {img_url, name, rating, description, cast, genre, watch_url } = data; // Destructuring by storing the value from props.data...
 
     // Inline CSS
-
     const btn_style = {
       padding:"1.2rem 2.4rem", 
       border:"none",
@@ -39,7 +37,6 @@ export const SeriesCard = ({ data }) =>{
     }
 
     const ratingClass = rating >= 8.5 ? "super_hit" : "average";
-
     return ( 
           <li className="card">
             <div>
@@ -47,9 +44,7 @@ export const SeriesCard = ({ data }) =>{
             </div>
             <div className="card-content">  
               <h2>Name: {name} </h2>
-
               <h3>Rating:<span className={`rating ${ratingClass}`} >{rating} </span></h3>
-
               <p > Summary: {description} </p>
               <p > Genre: {genre.join(", ")}</p>
               <p > Cast: {cast.join(", ")} </p>

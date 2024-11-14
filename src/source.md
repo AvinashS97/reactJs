@@ -94,4 +94,4 @@ function MyButton() {
 You can use ternary operators to add conditional stylings to your CSS.
 
 * Styled Components in React.js
-    npm i styled-components
+    <npm install styled-components>
