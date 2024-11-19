@@ -78,7 +78,7 @@ export const SeriesCard = ({ data }) =>{
                 {/* <span className={`rating ${ratingClass}`} >{rating} </span> */}
                 <span className={`${styles.rating} ${ratingClass}`} >{rating} </span>
               </h3>
-              <p className="text-3xl font-bold "> Summary: {description} </p>
+              <p className="text-3xl font-bold italic"> Summary: {description} </p>
               <p > Genre: {genre.join(", ")}</p>
               <p > Cast: {cast.join(", ")} </p>
               <a href= {watch_url} target="_blank">
@@ -92,6 +92,4 @@ export const SeriesCard = ({ data }) =>{
           </li>)
 }
 
-
-
-// 04:53
+//07:00
