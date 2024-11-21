@@ -92,4 +92,4 @@ export const SeriesCard = ({ data }) =>{
           </li>)
 }
 
-//07:00
+23 //07:00
