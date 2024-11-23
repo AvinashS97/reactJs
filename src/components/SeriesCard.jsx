@@ -72,14 +72,15 @@ export const SeriesCard = ({ data }) =>{
             <div>
               <img src={img_url} alt={name} width="40%" height="40%" />
             </div>
-            <div className={styles["card-content"]}>  
+            {/* <div className={styles["card-content"]}> */} 
+            <div className="flex flex-col gap-6 px-6 py-12">
               <h2>Name: {name} </h2>
               <h3>
                 Rating:
                 {/* <span className={`rating ${ratingClass}`} >{rating} </span> */}
                 <span className={`${styles.rating} ${ratingClass}`} >{rating} </span>
               </h3>
-              <p className="text-3xl font-bold italic"> Summary: {description} </p>
+              <p className="text-3xl font-bold italic text-zinc-500"> Summary: {description} </p>
               <p > Genre: {genre.join(", ")}</p>
               <p > Cast: {cast.join(", ")} </p>
               <a href= {watch_url} target="_blank">

@@ -95,3 +95,11 @@ You can use ternary operators to add conditional stylings to your CSS.
 
 * Styled Components in React.js
     <npm install styled-components>
+
+# Applying padding in Tailwind
+  * Using Extended Spacing Scale: If you've exteended the spacing scale, you can use the custom classes:
+  <div class="py-12 px-6">Content</div>
+
+  * Using Arbitrary Values:
+  You can use arbitrary vlaues directly:
+  <div class="py-[3.2rem] px-[1.2rem]">Content</div>
