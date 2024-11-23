@@ -93,4 +93,4 @@ export const SeriesCard = ({ data }) =>{
           </li>)
 }
 
-23 //07:00
+//22nd Video :: 07:00
