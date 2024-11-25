@@ -93,5 +93,3 @@ export const SeriesCard = ({ data }) =>{
             </div>
           </li>)
 }
-
-//22nd Video :: 07:00

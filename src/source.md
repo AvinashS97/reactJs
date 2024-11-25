@@ -94,7 +94,11 @@ function MyButton() {
 You can use ternary operators to add conditional stylings to your CSS.
 
 * Styled Components in React.js
-    <npm install styled-components>
+    <npm install styled-components></>
+
+Install Tailwind Css for Vite
+    <npm install -D tailwindcss postcss autoprefixer>
+    <npx tailwindcss init -p>
 
 # Applying padding in Tailwind
   * Using Extended Spacing Scale: If you've exteended the spacing scale, you can use the custom classes:
@@ -103,3 +107,14 @@ You can use ternary operators to add conditional stylings to your CSS.
   * Using Arbitrary Values:
   You can use arbitrary vlaues directly:
   <div class="py-[3.2rem] px-[1.2rem]">Content</div>
+
+# Event Handling in React.js
+  The process of capturing and responding to user interactions, such as clicks, keystrokes, or form sub,issions, within a react application.
+
+* Event naming conventions:-
+    camelCase: Event names in JSX should be written in camelCase. uses prefix with 'on'.
+    Eg:- onClick, onChange, onSubmit.
+
+* Function Naming Conventions 
+prefix with 'handle': It is a comman convention to prefix event handler functions with 'handle' to clearly indicate their purpose.
+Eg:- handleSubmit, handleChange...
