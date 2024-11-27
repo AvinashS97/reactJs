@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
 }
-  
+
 .g-div {
   width: 100rem;
   height: 50rem;
@@ -15,7 +15,7 @@
   justify-content: center;
   align-items: center;
 }
-  
+
 .p-div {
   width: 80rem;
   height: 30rem;
@@ -25,7 +25,7 @@
   justify-content: center;
   align-items: center;
 }
-  
+
 .c-div {
   width: 60rem;
   height: 10rem;
@@ -33,34 +33,33 @@
   background-color: #f7dc6f;
   font-size: 2rem;
 }
-  
-  .events-handling {
-    display: flex;
-    justify-content: center;
-    gap: 1.2rem;
-  }
-  
-  .container h2 {
-    text-align: center;
-    font-size: 3.2rem;
-    margin-bottom: 3.2rem;
-  }
-  
-  button {
-    font-size: 2rem;
-    padding: 1.2rem 2.4rem;
-    background-color: #82e0aa;
-  }
-  
-  button:nth-child(even) {
-    font-size: 2rem;
-    padding: 1.2rem 2.4rem;
-    background-color: #82e0aa;
-  }
-  
-  button:nth-child(odd) {
-    font-size: 2rem;
-    padding: 1.2rem 2.4rem;
-    background-color: #f7dc6f;
-  }
-  
+
+.events-handling {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.container h2 {
+  text-align: center;
+  font-size: 3.2rem;
+  margin-bottom: 3.2rem;
+}
+
+button {
+  font-size: 2rem;
+  padding: 1.2rem 2.4rem;
+  background-color: #82e0aa;
+}
+
+button:nth-child(even) {
+  font-size: 2rem;
+  padding: 1.2rem 2.4rem;
+  background-color: #82e0aa;
+}
+
+button:nth-child(odd) {
+  font-size: 2rem;
+  padding: 1.2rem 2.4rem;
+  background-color: #f7dc6f;
+}
