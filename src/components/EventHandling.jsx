@@ -1,4 +1,5 @@
 import "./EV.css"
+//! 23 Event Handling
 
 export const EventHandling = () => {
 
@@ -12,6 +13,10 @@ export const EventHandling = () => {
         console.log(event.target);
         console.log(event.type);
         alert("Hey ! I am onClick Event Handling ")
+    };
+
+    const handleWelcomeUser = (user) =>{
+        console.log(`Hello ${user}, Welcome`)
     }
 
     return (
@@ -30,9 +35,9 @@ export const EventHandling = () => {
         <button onClick={(event) => console.log(event)}>Inline fns</button>
         {/* //* Function Component with Inline Arrow fns */}
         <button onClick={() => alert("Hey I am Inline Arrow Fns")}>Inline Arrow function</button>
-
+        {/* //* Passing Arguments to Event Handlers */}
+        <button onClick={()=>handleWelcomeUser("Avinash")}>Click Me</button>
 
         </>
     )
 }
-// 18:21
