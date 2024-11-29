@@ -122,3 +122,5 @@ Install Tailwind Css for Vite
 * Function Naming Conventions 
 prefix with 'handle': It is a comman convention to prefix event handler functions with 'handle' to clearly indicate their purpose.
 Eg:- handleSubmit, handleChange...
+
+# V23- Passing Events handlers as Props:-
