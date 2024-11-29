@@ -109,7 +109,11 @@ Install Tailwind Css for Vite
   <div class="py-[3.2rem] px-[1.2rem]">Content</div>
 
 # Event Handling in React.js
-  The process of capturing and responding to user interactions, such as clicks, keystrokes, or form sub,issions, within a react application.
+  Event handling in React.js is process of capturing and responding to user interactions, such as clicks, keystrokes, or form submissions, within a React application.
+  Event Handling in React follows a similar pattern to standard JavaScript event handling but with some key differences, such as using synthetic event for cross-browser compatibility and providing consistent event handling across different elements and browsers.
+
+# SyntheticBasedEvent in React:-
+  When you handle events in React, like clicking a button or typing in an input box, React wraps the native browser events in something called a Synthetic Event. 
 
 * Event naming conventions:-
     camelCase: Event names in JSX should be written in camelCase. uses prefix with 'on'.
