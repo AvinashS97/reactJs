@@ -21,7 +21,6 @@ export const EventHandling = () => {
 
     return (
         <>
-
         {/* //? Function Component with named fns */}
         {/* <button onClick={handleClick}> Click Me</button> */}
         {/* //* Here in the above line we haven't call hanldleClick function we have just pass the reference of it. */}
@@ -32,12 +31,11 @@ export const EventHandling = () => {
         <button onClick={()=> handleClick(event)}>Click Me</button>
         <br />
         {/* //* Inline Event Handlers */}
-        <button onClick={(event) => console.log(event)}>Inline fns</button>
+        <button onClick={(event) => console.log(event)}>Inline fns</button><br/ >
         {/* //* Function Component with Inline Arrow fns */}
-        <button onClick={() => alert("Hey I am Inline Arrow Fns")}>Inline Arrow function</button>
+        <button onClick={() => alert("Hey I am Inline Arrow Fns")}>Inline Arrow function</button><br/ >
         {/* //* Passing Arguments to Event Handlers */}
-        <button onClick={()=>handleWelcomeUser("Avinash")}>Click Me</button>
-
+        <button onClick={()=>handleWelcomeUser("Avinash")}>Click Me</button><br/ >
         </>
     )
 }
