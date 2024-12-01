@@ -4,7 +4,7 @@ export const EventProps = () => {
         alert (`Hey,${user}`);
     };
 
-    const handleHover = (user) => {
+    const handleHover = () => {
         alert ("Hey, Hovered!!!");
     };
 
@@ -19,12 +19,18 @@ export const EventProps = () => {
 }
 
 const WelcomeUser = (props) =>{
+    const {onClick, onMouseEnter }= props;
+    const handleGreeting = () => {
+        console.log(`Hey User, Welcome`);
+        onClick();
+        
+    }
 
     return (
         <>
-        <button onClick={props.onClick}>Click</button>
-        <button onMouseEnter={props.onMouseEnter}>Hover Me</button>
-        <button onClick={handleGreeting}>Greeting</button>
+        <button onClick={onClick}>Click</button> <br/>
+        <button onMouseEnter={onMouseEnter}>Hover Me</button> <br/> 
+        <button onClick={handleGreeting}>Greeting</button> <br/>
         </>
     )
 }

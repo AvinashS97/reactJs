@@ -2,7 +2,9 @@
 // import NetflixSeries from "./components/NetflixSeries";
 import "./components/Netflix.css"
 import "./components/Netflix.module.css"; 
-import { EventHandling } from "./components/EventHandling";
+// import { EventHandling } from "./components/EventHandling";
+import { EventProps } from "./components/EventProps";
+import  "./components/EV.css";
 
 // import {Fragment } from "react";
 // return <Fragment>//</Fragment>
@@ -16,7 +18,8 @@ export const App = () => {
       {/* <h1 className="card-heading">List of Best Netflix Series</h1> */}
     {/* < Header/> */}
     {/* <NetflixSeries /> */}
-    <EventHandling />
+    {/* <EventHandling /> */}
+    <EventProps/>
     {/* <Footer /> */}
    </section >
 )

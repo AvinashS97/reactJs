@@ -31,11 +31,11 @@ export const EventHandling = () => {
         <button onClick={()=> handleClick(event)}>Click Me</button>
         <br />
         {/* //* Inline Event Handlers */}
-        <button onClick={(event) => console.log(event)}>Inline fns</button><br/ >
+        <button onClick={(event) => console.log(event)}>Inline fns</button> <br/>
         {/* //* Function Component with Inline Arrow fns */}
-        <button onClick={() => alert("Hey I am Inline Arrow Fns")}>Inline Arrow function</button><br/ >
+        <button onClick={() => alert("Hey I am Inline Arrow Fns")}>Inline Arrow function</button> <br/>
         {/* //* Passing Arguments to Event Handlers */}
-        <button onClick={()=>handleWelcomeUser("Avinash")}>Click Me</button><br/ >
+        <button onClick={()=>handleWelcomeUser("Avinash")}>Click Me</button> <br/>
         </>
     )
 }
