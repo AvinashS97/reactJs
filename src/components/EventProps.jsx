@@ -19,7 +19,7 @@ export const EventProps = () => {
 }
 
 const WelcomeUser = (props) =>{
-    
+
     return (
         <>
         <button onClick={props.onClick}>Click</button>
@@ -28,3 +28,5 @@ const WelcomeUser = (props) =>{
         </>
     )
 }
+
+// 06:50
