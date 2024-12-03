@@ -108,7 +108,7 @@ Install Tailwind Css for Vite
   You can use arbitrary vlaues directly:
   <div class="py-[3.2rem] px-[1.2rem]">Content</div>
 
-# Event Handling in React.js
+# V23- Event Handling in React.js
   Event handling in React.js is process of capturing and responding to user interactions, such as clicks, keystrokes, or form submissions, within a React application.
   Event Handling in React follows a similar pattern to standard JavaScript event handling but with some key differences, such as using synthetic event for cross-browser compatibility and providing consistent event handling across different elements and browsers.
 
@@ -123,4 +123,11 @@ Install Tailwind Css for Vite
 prefix with 'handle': It is a comman convention to prefix event handler functions with 'handle' to clearly indicate their purpose.
 Eg:- handleSubmit, handleChange...
 
-# V23- Passing Events handlers as Props:-
+# V24- Passing Events handlers as Props:-
+  Passing event handlers as props in React.js is a common pattern used to allow child componants to communicate with parent components.
+  This pattern is useful in various scenarios, including:-
+  * Form Handling:- Event handlers like onChange or onSubmit to form components allows the child components to update the form data and notify the parent component of changes.
+
+  * User Interaction:- Event handlers like onClick can be passed to interactive elements (buttons, links) to trigger specific actions in the parent component, such as opening a modal or navigating to a different page.
+
+# V25- Event Propagation in React_Capturing, Bubbling, and Practical Implementation

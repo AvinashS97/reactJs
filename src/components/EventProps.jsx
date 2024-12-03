@@ -1,3 +1,5 @@
+// V24 Passing Events as Propsin React
+
 export const EventProps = () => {
 
     const HandleWelcomeUser = (user) => {
@@ -34,5 +36,3 @@ const WelcomeUser = (props) =>{
         </>
     )
 }
-
-// 06:50
