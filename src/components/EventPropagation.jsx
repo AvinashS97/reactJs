@@ -1,3 +1,5 @@
+// V25 Event Propagation in React
+
 export const EventPropagation = () => {
     
     const handleGrandParent = () => {
@@ -15,9 +17,7 @@ export const EventPropagation = () => {
         console.log("GrandParent Clicked");
     };
     
-    
-    
-    
+  
     return (
         <section className="main-div">
             <div className="g-div" onClick={handleGrandParent}>
@@ -29,3 +29,4 @@ export const EventPropagation = () => {
     )
 }
 
+// 06:02

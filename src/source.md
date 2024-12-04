@@ -131,7 +131,7 @@ Eg:- handleSubmit, handleChange...
   * User Interaction:- Event handlers like onClick can be passed to interactive elements (buttons, links) to trigger specific actions in the parent component, such as opening a modal or navigating to a different page.
 
 # V25- Event Propagation in React_Capturing, Bubbling, and Practical Implementation
-Refers to the process of how events propagate or travel through the DOM hierarchy.
+Event Propagation Refers to the process of how events propagate or travel through the DOM hierarchy.
 
 In JS, There are 2 phase of event propagation- Capturing phase, Bubbling phase.
 
