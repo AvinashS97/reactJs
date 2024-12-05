@@ -1,4 +1,5 @@
 // V25 Event Propagation in React
+// import "./EV.css";
 
 export const EventPropagation = () => {
     
@@ -8,13 +9,13 @@ export const EventPropagation = () => {
     };
     
     const handleParentCick = () => {
-        console.log("GrandParent Clicked");
+        console.log("Parent Clicked");
         
     };
     
     const handleChildClick = (event) => {
         console.log(event);
-        console.log("GrandParent Clicked");
+        console.log("Child Clicked");
     };
     
   

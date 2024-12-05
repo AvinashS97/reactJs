@@ -1,9 +1,10 @@
 // import NetflixSeries, {Footer, Header} from "./components/NetflixSeries";
 // import NetflixSeries from "./components/NetflixSeries";
-import "./components/Netflix.css"
-import "./components/Netflix.module.css"; 
+// import "./components/Netflix.css"
+// import "./components/Netflix.module.css"; 
 // import { EventHandling } from "./components/EventHandling";
-import { EventProps } from "./components/EventProps";
+// import { EventProps } from "./components/EventProps";
+import { EventPropagation} from "./components/EventPropagation";
 import  "./components/EV.css";
 
 // import {Fragment } from "react";
@@ -19,7 +20,8 @@ export const App = () => {
     {/* < Header/> */}
     {/* <NetflixSeries /> */}
     {/* <EventHandling /> */}
-    <EventProps/>
+    {/* <EventProps/> */}
+    <EventPropagation />
     {/* <Footer /> */}
    </section >
 )
