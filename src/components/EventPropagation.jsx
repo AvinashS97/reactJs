@@ -15,19 +15,18 @@ export const EventPropagation = () => {
     
     const handleChildClick = (event) => {
         console.log(event);
+        event.stopPropagation();
         console.log("Child Clicked");
     };
     
-  
+//   example of default nature Event bubbling
     return (
         <section className="main-div">
-            <div className="g-div" onClick={handleGrandParent}>
-                <div className="p-div" onClick={handleParentCick}>
-                <button className="c-div" onClick={handleChildClick}> Child Div </button>
+                <div className="g-div" onClickCapture={handleGrandParent}> {/*Capturing Phase*/}
+                <div className="p-div" onClickCapture={handleParentCick}> {/*Capturing Phase*/}
+                <button className="c-div" onClickCapture={handleChildClick}> Child Div </button> {/*Capturing Phase*/}
                 </div>
             </div>
         </section>
     )
 }
-
-// 06:02

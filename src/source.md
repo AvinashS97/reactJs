@@ -137,4 +137,4 @@ In JS, There are 2 phase of event propagation- Capturing phase, Bubbling phase.
 
 Capturing Phase :- The event starts from the root of the DOM and goes down to the target element.
 
-Bubbling Phase:- The event starts from the target element
+Bubbling Phase:- The event starts from the target element.By default nature of Event Propagation is Bubbling...
