@@ -142,4 +142,10 @@ Bubbling Phase:- The event starts from the target element.By default nature of E
 # V26- React States (useState Hook)
 
 State refers to an Object that holds data or information about the component.
-State is dynamic and mutable, meaning it can change over time usually in response to user acions, server responses or other events.
+State is dynamic and mutable, meaning it can change over time usually in response to user actions, server responses or other events.
+
+useState:- It manages the state within function components, It allows you to declare and update state variable within a component.The function which starts with "use" is called hook...
+
+Syntax:-
+    <const[count, setCount]= useState(0)>
+
