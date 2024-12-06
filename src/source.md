@@ -138,3 +138,8 @@ In JS, There are 2 phase of event propagation- Capturing phase, Bubbling phase.
 Capturing Phase :- The event starts from the root of the DOM and goes down to the target element.
 
 Bubbling Phase:- The event starts from the target element.By default nature of Event Propagation is Bubbling...
+
+# V26- React States (useState Hook)
+
+State refers to an Object that holds data or information about the component.
+State is dynamic and mutable, meaning it can change over time usually in response to user acions, server responses or other events.

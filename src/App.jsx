@@ -4,8 +4,9 @@
 // import "./components/Netflix.module.css"; 
 // import { EventHandling } from "./components/EventHandling";
 // import { EventProps } from "./components/EventProps";
-import { EventPropagation} from "./components/EventPropagation";
+// import { EventPropagation} from "./components/EventPropagation";
 import  "./components/EV.css";
+import { State } from "./components/hooks/State";
 
 // import {Fragment } from "react";
 // return <Fragment>//</Fragment>
@@ -21,7 +22,9 @@ export const App = () => {
     {/* <NetflixSeries /> */}
     {/* <EventHandling /> */}
     {/* <EventProps/> */}
-    <EventPropagation />
+    {/* <EventPropagation /> */}
+    <State />
+
     {/* <Footer /> */}
    </section >
 )
