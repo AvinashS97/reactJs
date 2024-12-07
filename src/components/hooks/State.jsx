@@ -9,7 +9,7 @@ export const State = () =>{
     // let array = useState()
     // console.log(array);
 
-    
+
      
     const [count, setCount] = useState(0);
 
@@ -22,6 +22,18 @@ export const State = () =>{
         <h1>{count}</h1>
         <button onClick={handleButtonClick}>Increment</button>
         </section>
+        <ChildComponent count = {count} />
         </>
     )
 }
+
+function ChildComponent ({count }) {
+    console.log("Child Component Rendered");
+    return(
+        <div className="main-div">
+            <h2>Child Component - {count} </h2>
+        </div>
+    )
+}
+
+// 11:28

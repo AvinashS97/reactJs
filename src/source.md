@@ -152,3 +152,7 @@ Syntax:-
 i) Dynamic UI Updates:- State allows your components to update dynamically in response to user input or other events. For Example:- in a form, the state might hold the current value of the input fields, updating in real-time as the user types.
 ii) Interactivity:- State makes your application interactive. such as clicks, form submissions, or keyboard inputs.
 
+# V27- How React State Works
+
+React Reconciliation is the process through which React updates the Browser DOM.
+Diffing short for Differences Algorithm is used to differentiate the DOM tree for efficient updates.
