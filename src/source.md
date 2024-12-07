@@ -140,7 +140,6 @@ Capturing Phase :- The event starts from the root of the DOM and goes down to th
 Bubbling Phase:- The event starts from the target element.By default nature of Event Propagation is Bubbling...
 
 # V26- React States (useState Hook)
-
 State refers to an Object that holds data or information about the component.
 State is dynamic and mutable, meaning it can change over time usually in response to user actions, server responses or other events.
 
@@ -148,4 +147,8 @@ useState:- It manages the state within function components, It allows you to dec
 
 Syntax:-
     <const[count, setCount]= useState(0)>
+
+* Need of State:-
+i) Dynamic UI Updates:- State allows your components to update dynamically in response to user input or other events. For Example:- in a form, the state might hold the current value of the input fields, updating in real-time as the user types.
+ii) Interactivity:- State makes your application interactive. such as clicks, form submissions, or keyboard inputs.
 

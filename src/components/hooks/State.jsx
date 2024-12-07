@@ -6,20 +6,22 @@ export const State = () =>{
     //     value++;
     //     console.log(value);
     // };
-
     // let array = useState()
     // console.log(array);
-     
-    const [count, setCount] = useState()
 
+    
+     
+    const [count, setCount] = useState(0);
+
+    const handleButtonClick = () => {
+        setCount(() => count + 1)
+    };
     return (
         <>
         <section className="main-div">
         <h1>{count}</h1>
-        <button >Increment</button>
+        <button onClick={handleButtonClick}>Increment</button>
         </section>
         </>
     )
 }
-
-// 15:05
