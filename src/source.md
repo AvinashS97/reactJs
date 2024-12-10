@@ -161,3 +161,12 @@ Diffing short for Differences Algorithm is used to differentiate the DOM tree fo
 On the very first time react renders Parent Component, Child Component, AnotherChild Component and Sibling Components.
 After that, if there is changes in Parent Component, React will re-render ParentComponent and its Children.
 Sibling Component is not affected by the state change in Parent Component. Therefore, it will not be re-rendered.
+
+# V28- Why the state value does not reset to its initial value on re-render?
+
+First Render: const[count, setCount] = useState(0);
+count is initialized to 0.
+Button Click: increment function is called.
+setCount(count + 1) updates count to 1.
+Re-render: React re-renders the component.(When user cick button for the 2nd time)
+const[count, setCount] = useState(0); sees that count is now 1 and it uses 1 as the current state.
