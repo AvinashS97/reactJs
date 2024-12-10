@@ -156,3 +156,8 @@ ii) Interactivity:- State makes your application interactive. such as clicks, fo
 
 React Reconciliation is the process through which React updates the Browser DOM.
 Diffing short for Differences Algorithm is used to differentiate the DOM tree for efficient updates.
+
+* How rendering Works:-
+On the very first time react renders Parent Component, Child Component, AnotherChild Component and Sibling Components.
+After that, if there is changes in Parent Component, React will re-render ParentComponent and its Children.
+Sibling Component is not affected by the state change in Parent Component. Therefore, it will not be re-rendered.

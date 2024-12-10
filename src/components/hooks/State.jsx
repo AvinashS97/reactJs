@@ -14,7 +14,7 @@ export const State = () =>{
 
      
 const [count, setCount] = useState(0);
-
+console.log("Parent Component Rendered");
 const handleButtonClick = () => {
     setCount(() => count + 1)
 };
