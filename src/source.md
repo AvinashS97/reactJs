@@ -171,4 +171,8 @@ setCount(count + 1) updates count to 1.
 Re-render: React re-renders the component.(When user cick button for the 2nd time)
 const[count, setCount] = useState(0); sees that count is now 1 and it uses 1 as the current state.
 
-# v29- React Js State Challenge
+So mainly, React preserves the state values to ensure the component behaves predictably even as it re-renders in response to changes in props, state updates, or other triggers.
+
+# V29- React Js State Challenge
+
+# V30- Derived State- Improve State Management and Remove Redundancy & Dependency.
