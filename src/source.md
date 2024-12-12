@@ -176,3 +176,7 @@ So mainly, React preserves the state values to ensure the component behaves pred
 # V29- React Js State Challenge
 
 # V30- Derived State- Improve State Management and Remove Redundancy & Dependency.
+Derived State is any state that can be computed based on other state or props. It is not stored directly in the component's state but is calculated when needed.
+This approach avoid duplication and keeps the state simpler and more manageable.
+
+Ex:- const userCount= users.length;
