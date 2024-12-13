@@ -186,3 +186,4 @@ Ex:- const userCount= users.length;
 # V31- Lifting the State Up in React
 Lifting State Up is a pattern in React where you move the state from child compponents to a common parent component so that multiple child components can share and synchronize this state.
   * Use Case:- When you have two or more components that need to share the same state, you should lift the state up to their nearest common ancestor/parent. This allows these components to stay in sync and ensures that the state is managed in a single place.
+

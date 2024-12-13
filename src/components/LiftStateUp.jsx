@@ -1,4 +1,4 @@
-// V31- 
+// V31- Lifting the State Up 
 
 import { useState } from "react";
 
@@ -6,22 +6,20 @@ export const LiftingState = () => {
     const [inputValue, setInputValue] = useState("")
     return (
         <>
-        <InputComponent inputValue={inputValue} setInputValue = {setInputValue} />
-        <DisplayComponent inputValue= {inputValue} />
+            <InputComponent inputValue={inputValue} setInputValue={setInputValue} />
+            <DisplayComponent inputValue={inputValue} />
         </>
     );
 };
 
-const InputComponent = ({inputValue, setInputValue}) => {
-    
+const InputComponent = ({ inputValue, setInputValue }) => {
     return (
-    <>
-    <input type="text" placeholder="Enter Your Name" value={inputValue} onChange={(e)=> setInputValue (e.target.value)}></input>
-    </>
+        <>
+            <input type="text" placeholder="Enter Your Name" value={inputValue} onChange={(e) => setInputValue(e.target.value)}></input>
+        </>
     );
 };
 
-
-const DisplayComponent = ({inputValue}) => {
-    return <p>The Current input Value is: {inputValue} </p> 
+const DisplayComponent = ({ inputValue }) => {
+    return <p>The Current input Value is: {inputValue} </p>
 };
