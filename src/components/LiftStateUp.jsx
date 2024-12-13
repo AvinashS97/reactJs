@@ -1,17 +1,19 @@
+// V31- 
+
 import { useState } from "react";
-import { requestFormReset } from "react-dom";
 
 export const LiftingState = () => {
+    const [inputValue, setInputValue] = useState("")
     return (
         <>
-        <InputComponent />
-        <DisplayComponent />
+        <InputComponent inputValue={inputValue} setInputValue = {setInputValue} />
+        <DisplayComponent inputValue= {inputValue} />
         </>
     );
 };
 
-const InputComponent = () => {
-    const [inputValue, setInputValue] = useState("")
+const InputComponent = ({inputValue, setInputValue}) => {
+    
     return (
     <>
     <input type="text" placeholder="Enter Your Name" value={inputValue} onChange={(e)=> setInputValue (e.target.value)}></input>
@@ -20,6 +22,6 @@ const InputComponent = () => {
 };
 
 
-const DisplayComponent = () => {
-    return <p>The Current input Value is: </p> 
+const DisplayComponent = ({inputValue}) => {
+    return <p>The Current input Value is: {inputValue} </p> 
 };

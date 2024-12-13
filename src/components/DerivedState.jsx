@@ -20,10 +20,10 @@ export const DerivedState = () => {
         <div className="main-div">
             <h1>User List</h1>
             <ul>
-                {users.map((curElem, index) => {
+                {users.map((user, index) => {
                     return(
                         <li key={index}>
-                            {curElem.name} - {curElem.age} years old
+                            {user.name} - {user.age} years old
                         </li>
                     )
                 })}
