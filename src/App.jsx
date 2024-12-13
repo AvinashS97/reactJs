@@ -5,8 +5,9 @@
 // import { EventHandling } from "./components/EventHandling";
 // import { EventProps } from "./components/EventProps";
 // import { EventPropagation} from "./components/EventPropagation";
-import { DerivedState } from "./components/DerivedState";
+// import { DerivedState } from "./components/DerivedState";
 import  "./components/EV.css";
+import { LiftingState } from "./components/LiftStateUp";
 // import { State } from "./components/hooks/State";
 
 // import {Fragment } from "react";
@@ -25,8 +26,8 @@ export const App = () => {
     {/* <EventProps/> */}
     {/* <EventPropagation /> */}
     {/* <State /> */}
-    <DerivedState />
-
+    {/* <DerivedState /> */}
+    {<LiftingState/>}
     {/* <Footer /> */}
    </section >
 )
