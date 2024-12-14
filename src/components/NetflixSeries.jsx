@@ -14,64 +14,64 @@ import { SeriesCard } from "./SeriesCard";
 //     return genre;
 //   }
 
-  //! Conditionals in JSX
+//! Conditionals in JSX
 
-  // use conditional operator to show that user can watch movie or not.
-  
-  //? 1 ---> Not recommended B/c it violet the DRY (Do not Repeat Yourself ) Rule.
-  // if(age<16){
-  //   return (
-  //     <div>
-  //       <div>
-  //         <img src="The Railway Man jpeg.jfif" alt="movie" width="20%" height="10%" />
-  //       </div>
-  //       <h2>Name: {name} </h2>
-  //       <h3>Year: {2020+3} </h3>
-  //       <h3>Rating: {rating} </h3>
-  //       <p>Summary: {summary} </p>
-  //       <p>Genre: {returnGenre()}</p >
-  //       <button>Not Available</button>
-  //     </div>
-  //   )
-  // };
+// use conditional operator to show that user can watch movie or not.
 
-
-  //? 2 Using Ternary Operators :- Inline COnditional Rendering
-  // return (
-  //   <div>
-  //     <div>
-  //       <img src="The Railway Man jpeg.jfif" alt="movie" width="20%" height="10%" />
-  //     </div>
-  //     <h2>Name: {name} </h2>
-  //     <h3>Year: {2020 + 3} </h3>
-  //     <h3>Rating: {rating} </h3>
-  //     <p>Summary: {summary} </p>
-  //     <p>Genre: {returnGenre()}</p >
-  //     {/* <button> {age >= 18 ? "Watch Now" : "Not Available"} </button> */}
-  //   </div>
-  // )
+//? 1 ---> Not recommended B/c it violet the DRY (Do not Repeat Yourself ) Rule.
+// if(age<16){
+//   return (
+//     <div>
+//       <div>
+//         <img src="The Railway Man jpeg.jfif" alt="movie" width="20%" height="10%" />
+//       </div>
+//       <h2>Name: {name} </h2>
+//       <h3>Year: {2020+3} </h3>
+//       <h3>Rating: {rating} </h3>
+//       <p>Summary: {summary} </p>
+//       <p>Genre: {returnGenre()}</p >
+//       <button>Not Available</button>
+//     </div>
+//   )
+// };
 
 
-  //? 3 Conditional Attributes:
-  // let canWatch = "Not Available";
-  // if(age>= 16) canWatch = "Watch Now" ;
+//? 2 Using Ternary Operators :- Inline COnditional Rendering
+// return (
+//   <div>
+//     <div>
+//       <img src="The Railway Man jpeg.jfif" alt="movie" width="20%" height="10%" />
+//     </div>
+//     <h2>Name: {name} </h2>
+//     <h3>Year: {2020 + 3} </h3>
+//     <h3>Rating: {rating} </h3>
+//     <p>Summary: {summary} </p>
+//     <p>Genre: {returnGenre()}</p >
+//     {/* <button> {age >= 18 ? "Watch Now" : "Not Available"} </button> */}
+//   </div>
+// )
 
 
-  // return (
-  //   <div>
-  //     <div>
-  //       <img src="The Railway Man jpeg.jfif" alt="movie" width="20%" height="10%" />
-  //     </div>
-  //     <h2>Name: {name} </h2>
-  //     <h3>Year: {2020 + 3} </h3>
-  //     <h3>Rating: {rating} </h3>
-  //     <p>Summary: {summary} </p>
-  //     <p>Genre: {returnGenre()}</p >
-  //     <button> {canWatch} </button>
-  //   </div>
-  // )
+//? 3 Conditional Attributes:
+// let canWatch = "Not Available";
+// if(age>= 16) canWatch = "Watch Now" ;
 
-  //? 4 
+
+// return (
+//   <div>
+//     <div>
+//       <img src="The Railway Man jpeg.jfif" alt="movie" width="20%" height="10%" />
+//     </div>
+//     <h2>Name: {name} </h2>
+//     <h3>Year: {2020 + 3} </h3>
+//     <h3>Rating: {rating} </h3>
+//     <p>Summary: {summary} </p>
+//     <p>Genre: {returnGenre()}</p >
+//     <button> {canWatch} </button>
+//   </div>
+// )
+
+//? 4 
 
 //   const canWatch = () => {
 //     if (age >= 18) return "Watch Now";
@@ -133,9 +133,9 @@ import { SeriesCard } from "./SeriesCard";
 const NetflixSeries = () => {
   return (
     <ul className="grid grid-three-cols">
-      {seriesData.map((curElem) => ( 
-        <SeriesCard key={curElem.id} data = {curElem} />
-        ))}
+      {seriesData.map((curElem) => (
+        <SeriesCard key={curElem.id} data={curElem} />
+      ))}
     </ul>
   );
 };
