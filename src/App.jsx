@@ -6,9 +6,11 @@
 // import { EventProps } from "./components/EventProps";
 // import { EventPropagation} from "./components/EventPropagation";
 // import { DerivedState } from "./components/DerivedState";
-import  "./components/EV.css";
-import { LiftingState } from "./components/LiftStateUp";
+// import  "./components/EV.css";
+// import { LiftingState } from "./components/LiftStateUp";
 // import { State } from "./components/hooks/State";
+
+import { ToggleSwitch } from "./projects/ToggleSwitch/ToggleSwitch";
 
 // import {Fragment } from "react";
 // return <Fragment>//</Fragment>
@@ -27,7 +29,10 @@ export const App = () => {
     {/* <EventPropagation /> */}
     {/* <State /> */}
     {/* <DerivedState /> */}
-    {<LiftingState/>}
+    {/* {<LiftingState/>} */}
+    <ToggleSwitch />
+
+
     {/* <Footer /> */}
    </section >
 )
