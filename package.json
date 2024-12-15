@@ -10,8 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "force": "^0.0.3",
     "react": "^19.0.0-rc-6cf85185-20241014",
     "react-dom": "^19.0.0-rc-7ac8e612-20241113",
+    "react-icons": "^5.4.0",
     "styled-components": "^6.1.13"
   },
   "devDependencies": {
