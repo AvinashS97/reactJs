@@ -52,7 +52,7 @@ import { SeriesCard } from "./SeriesCard";
 // )
 
 
-//? 3 Conditional Attributes:
+//? 3 Conditional Attributes
 // let canWatch = "Not Available";
 // if(age>= 16) canWatch = "Watch Now" ;
 
