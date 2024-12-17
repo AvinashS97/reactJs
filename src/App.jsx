@@ -10,7 +10,8 @@
 // import { LiftingState } from "./components/LiftStateUp";
 // import { State } from "./components/hooks/State";
 
-import { ToggleSwitch } from "./projects/ToggleSwitch/ToggleSwitch";
+import { Todo } from "./projects/Todo/Todo";
+// import { ToggleSwitch } from "./projects/ToggleSwitch/ToggleSwitch";
 
 // import {Fragment } from "react";
 // return <Fragment>//</Fragment>
@@ -30,7 +31,8 @@ export const App = () => {
     {/* <State /> */}
     {/* <DerivedState /> */}
     {/* {<LiftingState/>} */}
-    <ToggleSwitch />
+    {/* <ToggleSwitch /> */}
+    <Todo />
 
 
     {/* <Footer /> */}
