@@ -1,62 +1,74 @@
-import { useState } from "react";
-import "./Todo.css";
-import { MdCheck, MdDeleteForever } from "react-icons/md";
+import { useState } from 'react'
+import './Todo.css'
+import { MdCheck, MdDeleteForever } from 'react-icons/md'
 
 export const Todo = () => {
-    const [inputValue, setInputValue] = useState("");
-    const [task, setTask] = useState([]);
-    
-    const handleInputChange = (value) => {
-        setInputValue(value);
-    };
+  const [inputValue, setInputValue] = useState('')
+  const [task, setTask] = useState([])
 
-    const handleFormSubmit = (event) => {
-        event.preventDefault();
+  const handleInputChange = value => {
+    setInputValue(value)
+  }
 
-        if(!inputValue) return;
+  const handleFormSubmit = event => {
+    event.preventDefault()
 
-        if(task.includes(inputValue)) {
-            setInputValue("");
-            return;
-        } 
-            
-        setTask((prevTask) => [...prevTask, inputValue]);
+    if (!inputValue) return
 
-        setInputValue("");
-    };
+    if (task.includes(inputValue)) {
+      setInputValue('')
+      return
+    }
 
+    setTask(prevTask => [...prevTask, inputValue])
 
-    return (
-        <section className="todo-container">
-            <header>
-                <h1>Todo List</h1>
-            </header>
-            <section className="form">
-                <form onSubmit={handleFormSubmit}>
-                    <div>
-                        <input type="text" className="todo-input" autoComplete="off" value={inputValue} onChange={(event)=> handleInputChange(event.target.value)}/>
-                    </div>
-                    <div>
-                        <button type="submit" className="todo-btn"> Add task</button>
-                    </div>
-                </form>
-            </section>
+    setInputValue('')
+  }
 
-            <section className="myUnOrdList">
-                <ul>
-                    {
-                        task.map((curTask, index) => {
-                            return <li key ={index}>
-                                <span>{curTask}</span>
-                                <button className="check-btn"> < MdCheck/> </button>
-                                <button className="delete-btn"> < MdDeleteForever/> </button>
-                            </li>
-                        })
-                    }
-                </ul>
-            </section>
+  return (
+    <section className='todo-container'>
+      <header>
+        <h1>Todo List</h1>
+      </header>
+      <section className='form'>
+        <form onSubmit={handleFormSubmit}>
+          <div>
+            <input
+              type='text'
+              className='todo-input'
+              autoComplete='off'
+              value={inputValue}
+              onChange={event => handleInputChange(event.target.value)}
+            />
+          </div>
+          <div>
+            <button type='submit' className='todo-btn'>
+              {' '}
+              Add task
+            </button>
+          </div>
+        </form>
+      </section>
 
-        </section>
-    )
+      <section className='myUnOrdList'>
+        <ul>
+          {task.map((curTask, index) => {
+            return (
+              <li key={index}>
+                <span>{curTask}</span>
+                <button className='check-btn'>
+                  <MdCheck />
+                </button>
+                <button className='delete-btn'>
+                  <MdDeleteForever />
+                </button>
+              </li>
+            )
+          })}
+        </ul>
+      </section>
+    </section>
+  )
 }
 
+// 34:00
