@@ -116,7 +116,6 @@ span {
 
 .todo-list {
   min-width: 25%;
-
   /* To remove the bullets of unordered list */
   list-style: none;
 }
@@ -138,7 +137,7 @@ span {
   grid-template-columns: 1fr 0.3fr 0.3fr;
   justify-content: start;
   gap: 1.6rem;
-  /*align-items: center;
+  /* align-items: center;
       */ /*wrapsthelinks*/
   overflow-wrap: anywhere;
 }

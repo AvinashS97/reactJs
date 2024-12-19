@@ -6,9 +6,9 @@ export const Todo = () => {
   const [inputValue, setInputValue] = useState('')
   const [task, setTask] = useState([])
 
-  const handleInputChange = value => {
-    setInputValue(value)
-  }
+  const handleInputChange = (value) => {
+    setInputValue(value);
+  };
 
   const handleFormSubmit = event => {
     event.preventDefault()
@@ -16,13 +16,13 @@ export const Todo = () => {
     if (!inputValue) return;
 
     if (task.includes(inputValue)) {
-      setInputValue('')
-      return
+      setInputValue(''); 
+      return;
     }
 
     setTask(prevTask => [...prevTask, inputValue])
 
-    setInputValue('')
+    setInputValue('');
   }
 
   return (
@@ -43,7 +43,6 @@ export const Todo = () => {
           </div>
           <div>
             <button type='submit' className='todo-btn'>
-              {' '}
               Add task
             </button>
           </div>
@@ -54,7 +53,7 @@ export const Todo = () => {
         <ul>
           {task.map((curTask, index) => {
             return (
-              <li key={index}>
+              <li key={index} className="todo-item">
                 <span>{curTask}</span>
                 <button className='check-btn'>
                   <MdCheck />
@@ -71,4 +70,3 @@ export const Todo = () => {
   )
 }
 
-// 34:00
