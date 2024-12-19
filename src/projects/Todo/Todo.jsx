@@ -13,7 +13,7 @@ export const Todo = () => {
   const handleFormSubmit = event => {
     event.preventDefault()
 
-    if (!inputValue) return
+    if (!inputValue) return;
 
     if (task.includes(inputValue)) {
       setInputValue('')
