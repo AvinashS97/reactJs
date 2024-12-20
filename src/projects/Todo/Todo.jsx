@@ -1,46 +1,48 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './Todo.css'
 import { MdCheck, MdDeleteForever } from 'react-icons/md'
 
 export const Todo = () => {
   const [inputValue, setInputValue] = useState('')
-  const [task, setTask] = useState([]);
-  const [dateTime , setDateTime] = useState("");
+  const [task, setTask] = useState([])
+  const [dateTime, setDateTime] = useState('')
 
-  const handleInputChange = (value) => {
-    setInputValue(value);
-  };
+  const handleInputChange = value => {
+    setInputValue(value)
+  }
 
   const handleFormSubmit = event => {
     event.preventDefault()
 
-    if (!inputValue) return;
+    if (!inputValue) return
 
     if (task.includes(inputValue)) {
-      setInputValue(''); 
-      return;
+      setInputValue('')
+      return
     }
 
     setTask(prevTask => [...prevTask, inputValue])
 
-    setInputValue('');
+    setInputValue('')
   }
 
   // todo Date And Time
-  
-  setInterval (()=> {
-    const now = new Date();
-    const formattedDate = now.toLocaleDateString();
-    const formattedTime = now.toLocaleTimeString();
-    setDateTime(`${formattedDate} - ${formattedTime}`); 
-  },1000)
+  useEffect(() => {
+      const interval = setInterval(() => {
+      const now = new Date()
+      const formattedDate = now.toLocaleDateString()
+      const formattedTime = now.toLocaleTimeString()
+      setDateTime(`${formattedDate} - ${formattedTime}`)
+    }, 1000)
+
+    return () => clearInterval(interval)
+  }, [])
 
   return (
     <section className='todo-container'>
       <header>
         <h1>Todo List</h1>
-        <h2 className='date-time'>{formattedDate} - {formattedTime} </h2>
-
+        <h2 className='date-time'>{dateTime} </h2>
       </header>
       <section className='form'>
         <form onSubmit={handleFormSubmit}>
@@ -65,7 +67,7 @@ export const Todo = () => {
         <ul>
           {task.map((curTask, index) => {
             return (
-              <li key={index} className="todo-item">
+              <li key={index} className='todo-item'>
                 <span>{curTask}</span>
                 <button className='check-btn'>
                   <MdCheck />
@@ -81,4 +83,3 @@ export const Todo = () => {
     </section>
   )
 }
-
