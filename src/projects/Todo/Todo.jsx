@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import './Todo.css'
 import { MdCheck, MdDeleteForever } from 'react-icons/md'
+import { TodoForm } from './TodoForm'
 
 export const Todo = () => {
   const [inputValue, setInputValue] = useState('')
@@ -51,28 +52,11 @@ export const Todo = () => {
 
   return (
     <section className='todo-container'>
-      <header>
-        <h1>Todo List</h1>
-        <h2 className='date-time'>{dateTime} </h2>
-      </header>
-      <section className='form'>
-        <form onSubmit={handleFormSubmit}>
-          <div>
-            <input
-              type='text'
-              className='todo-input'
-              autoComplete='off'
-              value={inputValue}
-              onChange={event => handleInputChange(event.target.value)}
-            />
-          </div>
-          <div>
-            <button type='submit' className='todo-btn'>
-              Add task
-            </button>
-          </div>
-        </form>
-      </section>
+    <header>
+      <h1>Todo List</h1>
+      <h2 className='date-time'>{dateTime} </h2>
+    </header>
+    < TodoForm/>
 
       <section className='myUnOrdList'>
         <ul>
