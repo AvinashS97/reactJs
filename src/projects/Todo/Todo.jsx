@@ -10,21 +10,18 @@ export const Todo = () => {
   const handleInputChange = value => {
     setInputValue(value)
   }
-
   const handleFormSubmit = event => {
     event.preventDefault()
-
-    if (!inputValue) return
-
+    if (!inputValue) return;
     if (task.includes(inputValue)) {
       setInputValue('')
-      return
+      return;
     }
-
     setTask(prevTask => [...prevTask, inputValue])
-
     setInputValue('')
   }
+
+
 
   // todo Date And Time
   useEffect(() => {
@@ -37,6 +34,20 @@ export const Todo = () => {
 
     return () => clearInterval(interval)
   }, [])
+
+  // todo handleDeleteTodo function
+  const handleDeleteTodo = (value) => {
+    // console.log(task);
+    // console.log(value);
+    const updatedTask = task.filter ((curTask) => curTask !== value );
+    setTask(updatedTask);
+  };
+  
+  // todo handleClearTodoData function
+  const handleClearTodoData = () => {
+    setTask ([]);
+  }
+
 
   return (
     <section className='todo-container'>
@@ -72,13 +83,16 @@ export const Todo = () => {
                 <button className='check-btn'>
                   <MdCheck />
                 </button>
-                <button className='delete-btn'>
+                <button className='delete-btn' onClick={()=> handleDeleteTodo(curTask)}>
                   <MdDeleteForever />
                 </button>
               </li>
             )
           })}
         </ul>
+      </section>
+      <section>
+        <button className='clear-btn' onClick={handleClearTodoData}>Clear All</button>
       </section>
     </section>
   )
