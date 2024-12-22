@@ -8,11 +8,11 @@ export const Todo = () => {
   const [dateTime, setDateTime] = useState('')
 
   const handleFormSubmit = inputValue => {
-    if (!inputValue) return
+    if (!inputValue) return;
     if (task.includes(inputValue)) {
-      return
+      return;
     }
-    setTask(prevTask => [...prevTask, inputValue])
+    setTask(prevTask => [...prevTask, inputValue]);
   }
 
   // todo Date And Time
