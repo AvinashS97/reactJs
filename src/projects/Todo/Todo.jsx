@@ -5,9 +5,7 @@ import { TodoList } from './TodoList'
 import { TodoDate } from './TodoDate'
 
 export const Todo = () => {
-  const [task, setTask] = useState([])
-  
-
+  const [task, setTask] = useState([]);
   const handleFormSubmit = inputValue => {
     if (!inputValue) return;
     if (task.includes(inputValue)) {
@@ -35,16 +33,17 @@ export const Todo = () => {
     <section className='todo-container'>
       <header>
         <h1>Todo List</h1>
-        {/* Date and Time */}
+        {/* === Date and Time === */}
         <TodoDate />
       </header>
-
+      {/* === Todo Form === */}
       <TodoForm onAddTodo={handleFormSubmit} />
 
       <section className='myUnOrdList'>
         <ul>
           {task.map((curTask, index) => {
             return (
+              // { /* === TodoList ==== */ }
               <TodoList
                 key={index}
                 data={curTask}
@@ -63,4 +62,3 @@ export const Todo = () => {
   )
 }
 
-// 09:48 Done
