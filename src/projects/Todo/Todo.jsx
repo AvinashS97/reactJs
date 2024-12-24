@@ -6,21 +6,23 @@ import { TodoDate } from './TodoDate'
 
 export const Todo = () => {
   const [task, setTask] = useState([]);
-  const handleFormSubmit = inputValue => {
-    if (!inputValue) return;
-    if (task.includes(inputValue)) {
-      return;
-    }
-    setTask(prevTask => [...prevTask, inputValue]);
-  }
 
-  
+  const handleFormSubmit = inputValue => {
+    const {id, content, checked} = inputValue;
+// To check if the input fied is empty or not...
+    if (!content) return;
+//  To check if the data is already existing or not... 
+    // if (task.includes(inputValue)) return;
+    const ifTodoContentMatched = task.find((curTask) =>  curTask.content === content );
+    if (ifTodoContentMatched) return;
+
+    setTask((prevTask) => [...prevTask, { id, content, checked }
+    ]);
+  }
 
   // todo handleDeleteTodo function
   const handleDeleteTodo = value => {
-    // console.log(task);
-    // console.log(value);
-    const updatedTask = task.filter(curTask => curTask !== value)
+    const updatedTask = task.filter((curTask) => curTask.content !== value)
     setTask(updatedTask)
   }
 
@@ -28,6 +30,11 @@ export const Todo = () => {
   const handleClearTodoData = () => {
     setTask([])
   }
+
+  // todo handleCheckedTodo function
+  const handleCheckedTodo = (task) = {
+    // 21:10
+  } 
 
   return (
     <section className='todo-container'>
@@ -41,13 +48,15 @@ export const Todo = () => {
 
       <section className='myUnOrdList'>
         <ul>
-          {task.map((curTask, index) => {
+          {task.map((curTask) => {
             return (
               // { /* === TodoList ==== */ }
               <TodoList
-                key={index}
-                data={curTask}
-                onHandleDeleteTodo={handleDeleteTodo}
+                key={curTask.id}
+                data={curTask.content}
+                checked = {curTask.checked}
+                onHandleDeleteTodo = {handleDeleteTodo}
+                onHandleCheckedTodo = {handleCheckedTodo}
               />
             )
           })}
