@@ -5,24 +5,25 @@ import { TodoList } from './TodoList'
 import { TodoDate } from './TodoDate'
 
 export const Todo = () => {
-  const [task, setTask] = useState([]);
+  const [task, setTask] = useState([])
 
   const handleFormSubmit = inputValue => {
-    const {id, content, checked} = inputValue;
-// To check if the input fied is empty or not...
-    if (!content) return;
-//  To check if the data is already existing or not... 
+    const { id, content, checked } = inputValue
+    // To check if the input fied is empty or not...
+    if (!content) return
+    //  To check if the data is already existing or not...
     // if (task.includes(inputValue)) return;
-    const ifTodoContentMatched = task.find((curTask) =>  curTask.content === content );
-    if (ifTodoContentMatched) return;
+    const ifTodoContentMatched = task.find(
+      curTask => curTask.content === content
+    )
+    if (ifTodoContentMatched) return
 
-    setTask((prevTask) => [...prevTask, { id, content, checked }
-    ]);
+    setTask(prevTask => [...prevTask, { id, content, checked }])
   }
 
   // todo handleDeleteTodo function
   const handleDeleteTodo = value => {
-    const updatedTask = task.filter((curTask) => curTask.content !== value)
+    const updatedTask = task.filter(curTask => curTask.content !== value)
     setTask(updatedTask)
   }
 
@@ -32,9 +33,16 @@ export const Todo = () => {
   }
 
   // todo handleCheckedTodo function
-  const handleCheckedTodo = (task) = {
-    // 21:10
-  } 
+  const handleCheckedTodo = content => {
+    const updatedTask = task.map(curTask => {
+      if (curTask.content === content) {
+        return { ...curTask, checked: !curTask.checked }
+      } else {
+        return curTask
+      }
+    })
+    setTask(updatedTask)
+  }
 
   return (
     <section className='todo-container'>
@@ -48,15 +56,15 @@ export const Todo = () => {
 
       <section className='myUnOrdList'>
         <ul>
-          {task.map((curTask) => {
+          {task.map(curTask => {
             return (
               // { /* === TodoList ==== */ }
               <TodoList
                 key={curTask.id}
                 data={curTask.content}
-                checked = {curTask.checked}
-                onHandleDeleteTodo = {handleDeleteTodo}
-                onHandleCheckedTodo = {handleCheckedTodo}
+                checked={curTask.checked}
+                onHandleDeleteTodo={handleDeleteTodo}
+                onHandleCheckedTodo={handleCheckedTodo}
               />
             )
           })}
@@ -70,4 +78,3 @@ export const Todo = () => {
     </section>
   )
 }
-
