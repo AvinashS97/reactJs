@@ -1,7 +1,7 @@
-import { useEffect, useState } from 'react' 
+import { useEffect, useState } from 'react';
 
 export const TodoDate = () => {
-  const [dateTime, setDateTime] = useState('')
+  const [dateTime, setDateTime] = useState('');
   // todo Date And Time
 
     useEffect(() => {
@@ -10,9 +10,9 @@ export const TodoDate = () => {
       const formattedDate = now.toLocaleDateString()
       const formattedTime = now.toLocaleTimeString()
       setDateTime(`${formattedDate} - ${formattedTime}`)
-    }, 1000)
+    }, 1000);
 
-    return () => clearInterval(interval)
+    return () => clearInterval(interval);
   }, [])
 
   return <h2 className='date-time'>{dateTime} </h2>
