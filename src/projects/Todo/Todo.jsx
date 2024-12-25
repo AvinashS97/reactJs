@@ -5,10 +5,10 @@ import { TodoList } from './TodoList'
 import { TodoDate } from './TodoDate'
 
 export const Todo = () => {
-  const [task, setTask] = useState([])
+  const [task, setTask] = useState([]);
 
   const handleFormSubmit = inputValue => {
-    const { id, content, checked } = inputValue
+    const { id, content, checked } = inputValue;
     // To check if the input fied is empty or not...
     if (!content) return
     //  To check if the data is already existing or not...
@@ -24,12 +24,12 @@ export const Todo = () => {
   // todo handleDeleteTodo function
   const handleDeleteTodo = value => {
     const updatedTask = task.filter(curTask => curTask.content !== value)
-    setTask(updatedTask)
+    setTask(updatedTask);
   }
 
   // todo handleClearTodoData function
   const handleClearTodoData = () => {
-    setTask([])
+    setTask([]);
   }
 
   // todo handleCheckedTodo function
