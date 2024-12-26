@@ -5,25 +5,30 @@ import { TodoList } from './TodoList'
 import { TodoDate } from './TodoDate'
 
 export const Todo = () => {
-  const [task, setTask] = useState([]);
+  const [task, setTask] = useState(()=> {
+    const rawTodo = localStorage.getItem();
+  });
 
-  const handleFormSubmit = inputValue => {
+  const handleFormSubmit = (inputValue) => {
     const { id, content, checked } = inputValue;
     // To check if the input fied is empty or not...
-    if (!content) return
+    if (!content) return;
     //  To check if the data is already existing or not...
     // if (task.includes(inputValue)) return;
     const ifTodoContentMatched = task.find(
       curTask => curTask.content === content
-    )
-    if (ifTodoContentMatched) return
+    );
+    if (ifTodoContentMatched) return;
 
-    setTask(prevTask => [...prevTask, { id, content, checked }])
+    setTask(prevTask => [...prevTask, { id, content, checked }]);
   }
+
+  // add data to local storage
+  localStorage.setItem("reactTodo", JSON.stringify(task)); 
 
   // todo handleDeleteTodo function
   const handleDeleteTodo = value => {
-    const updatedTask = task.filter(curTask => curTask.content !== value)
+    const updatedTask = task.filter(curTask => curTask.content !== value);
     setTask(updatedTask);
   }
 
@@ -38,10 +43,10 @@ export const Todo = () => {
       if (curTask.content === content) {
         return { ...curTask, checked: !curTask.checked }
       } else {
-        return curTask
+        return curTask;
       }
     })
-    setTask(updatedTask)
+    setTask(updatedTask);
   }
 
   return (
@@ -49,7 +54,7 @@ export const Todo = () => {
       <header>
         <h1>Todo List</h1>
         {/* === Date and Time === */}
-        <TodoDate />
+    <TodoDate />
       </header>
       {/* === Todo Form === */}
       <TodoForm onAddTodo={handleFormSubmit} />
