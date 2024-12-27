@@ -10,7 +10,6 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  min-width: 100vw;
   padding-top: 3%;
   background-image: linear-gradient(100deg, #001214, #001f29);
   color: white;
@@ -117,6 +116,7 @@ span {
 
 .todo-list {
   min-width: 25%;
+
   /* To remove the bullets of unordered list */
   list-style: none;
 }
@@ -124,8 +124,8 @@ span {
 .todo-item {
   margin: 2.4rem;
   /*word-wrap: break-word;
-      */ /*flex-wrap: wrap;
-      */
+    */ /*flex-wrap: wrap;
+    */
   font-size: 20px;
   color: #1c2833;
   border-radius: 30px;
@@ -138,8 +138,8 @@ span {
   grid-template-columns: 1fr 0.3fr 0.3fr;
   justify-content: start;
   gap: 1.6rem;
-  /* align-items: center;
-      */ /*wrapsthelinks*/
+  /*align-items: center;
+    */ /*wrapsthelinks*/
   overflow-wrap: anywhere;
 }
 
