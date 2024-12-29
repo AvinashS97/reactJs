@@ -1,13 +1,11 @@
-import seriesData from "../api/seriesData.json";
-import { SeriesCard } from "./SeriesCard";
-
+import seriesData from '../api/seriesData.json'
+import { SeriesCard } from './SeriesCard'
 
 // const NetflixSeries = () => {
 //   const name = "The Railway Men";
 //   const rating = "8.5 / 10";
 //   const summary = "After a deadly gas leaks from a factory in Bhopal, brave railway workers risk their lives to save others in the face of an unspeakable disaster.";
 //   let age = 19;
-
 
 //   const returnGenre = () => {
 //     const genre = "Thrilling & Dangerous";
@@ -35,7 +33,6 @@ import { SeriesCard } from "./SeriesCard";
 //   )
 // };
 
-
 //? 2 Using Ternary Operators :- Inline COnditional Rendering
 // return (
 //   <div>
@@ -51,11 +48,9 @@ import { SeriesCard } from "./SeriesCard";
 //   </div>
 // )
 
-
 //? 3 Conditional Attributes
 // let canWatch = "Not Available";
 // if(age>= 16) canWatch = "Watch Now" ;
-
 
 // return (
 //   <div>
@@ -71,7 +66,7 @@ import { SeriesCard } from "./SeriesCard";
 //   </div>
 // )
 
-//? 4 
+//? 4
 
 //   const canWatch = () => {
 //     if (age >= 18) return "Watch Now";
@@ -92,7 +87,6 @@ import { SeriesCard } from "./SeriesCard";
 //     </>
 //   )
 // };
-
 
 //! Import and Export
 
@@ -116,7 +110,6 @@ import { SeriesCard } from "./SeriesCard";
 //   )
 // };
 
-
 // export const Header = () => {
 //     return <h1> Netflix Series</h1>
 // }
@@ -127,16 +120,15 @@ import { SeriesCard } from "./SeriesCard";
 //       return <p>copyright @AvinashS97 </p>
 // }
 
-
 //! Looping in JSX
 
 const NetflixSeries = () => {
   return (
-    <ul className="grid grid-three-cols">
-      {seriesData.map((curElem) => (
+    <ul className='grid grid-three-cols'>
+      {seriesData.map(curElem => (
         <SeriesCard key={curElem.id} data={curElem} />
       ))}
     </ul>
-  );
-};
-export default NetflixSeries;
+  )
+}
+export default NetflixSeries
