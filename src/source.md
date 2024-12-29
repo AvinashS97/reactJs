@@ -187,3 +187,13 @@ Ex:- const userCount= users.length;
 Lifting State Up is a pattern in React where you move the state from child compponents to a common parent component so that multiple child components can share and synchronize this state.
   * Use Case:- When you have two or more components that need to share the same state, you should lift the state up to their nearest common ancestor/parent. This allows these components to stay in sync and ensures that the state is managed in a single place.
 
+
+# V42- Keys in Reacts.js
+
+A string or a number that uniquely identifies it among other items in that array.
+Keys tell React which array item each component corresponds to, so that it can match them up later.
+This becomes important if your array items can move.(due to sorting), get inserted, or get deleted.
+
+* Rules
+    Keys must be unique among siblings
+    Keys must not change
