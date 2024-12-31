@@ -30,7 +30,7 @@ return (
     )
 };
 
-function ChildComponent ({count }) {
+function ChildComponent ({ count }) {
     console.log("Child Component Rendered");
     return(
         <div className="main-div">
