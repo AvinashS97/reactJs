@@ -9,6 +9,9 @@ export const TodoList = ({
   return (
     <li className="todo-item">
       <span className={checked ? "checkList" : "notCheckList"}>{data}</span>
+
+    {/* <input type="text"/> */}
+
       <button className="check-btn" onClick={() => onHandleCheckedTodo(data)}>
         <MdCheck />
       </button>
