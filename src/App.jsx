@@ -10,7 +10,6 @@
 // import { LiftingState } from "./components/LiftStateUp";
 // import { State } from "./components/hooks/State";
 
-import ShortCircuitExample from "./components/hooks/ShortCircuit";
 // import { Todo } from "./projects/Todo/Todo";
 // import { ToggleSwitch } from "./projects/ToggleSwitch/ToggleSwitch";
 
@@ -34,13 +33,14 @@ export const App = () => {
     {/* {<LiftingState/>} */}
     {/* <ToggleSwitch /> */}
     {/* <Todo /> */}
-    <ShortCircuitExample />
+    < ShortCircuitExample />
 
 
     {/* <Footer /> */}
    </section >
 )
 };
+
 
 
 

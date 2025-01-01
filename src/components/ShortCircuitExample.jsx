@@ -1,22 +1,9 @@
 import "./Hooks.css";
 import { useState } from "react";
 
-const ShortCircuitExample = () => {
+export const ShortCircuitExample = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(true);
   const [user, setUser] = useState("");
-  // const [count, setCount] = useState(0);
-
-  // if (user) {
-  //   const [count, setCount] = useState(0);
-  //   // setCount(count + 1);
-  // }
-  ``;
-  // const getData = () => {
-  //   const [data, setData] = useReducer(0);
-  // };
-
-  // getData();
-
   return (
     <section className="container short-container">
       <h1>Welcome to the ShortCircuit Evaluation!</h1>
@@ -31,13 +18,13 @@ const ShortCircuitExample = () => {
         <button onClick={() => setIsLoggedIn(!isLoggedIn)}>
           Toggle Login State
         </button>
-        <button onClick={() => setUser("vinod thapa")}>Set User</button>
+        <button onClick={() => setUser("Avinash")}>Set User</button>
         <button onClick={() => setUser("")}>Clear User</button>
       </div>
     </section>
   );
 };
 
-export default ShortCircuitExample;
+// export default ShortCircuitExample;
 
 // V43: 08:13

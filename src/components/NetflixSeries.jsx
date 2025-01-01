@@ -131,4 +131,4 @@ const NetflixSeries = () => {
     </ul>
   )
 }
-export default NetflixSeries
+export default NetflixSeries;
