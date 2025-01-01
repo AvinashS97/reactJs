@@ -9,7 +9,7 @@
 // import  "./components/EV.css";
 // import { LiftingState } from "./components/LiftStateUp";
 // import { State } from "./components/hooks/State";
-import ShortCircuitExample from "./components/hooks/ShortCircuitExample";
+import ShortCircuitExample from "./components/hooks/ShortCircuit";
 
 
 // import { Todo } from "./projects/Todo/Todo";
