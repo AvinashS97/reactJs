@@ -1,7 +1,7 @@
 import "./Hooks.css";
 import { useState } from "react";
 
-export const ShortCircuitExample = () => {
+const ShortCircuitExample = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(true);
   const [user, setUser] = useState("");
   return (
@@ -25,6 +25,4 @@ export const ShortCircuitExample = () => {
   );
 };
 
-// export default ShortCircuitExample;
-
-// V43: 08:13
+export default ShortCircuitExample;
