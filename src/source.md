@@ -1,8 +1,7 @@
-
 export const App = () => {
-  return (
-    <h1> Hello, World! </h1>    
-  )
+return (
+<h1> Hello, World! </h1>  
+ )
 }
 
 OR
@@ -12,18 +11,15 @@ import React from "react"
 React.createElement('h1', null, "Hello, World!")
 console.log(React.createElement('h1', null, "Hello, World!"))
 
-
-
 Each JSX expressions must have one parent element, which means if you try to return multiple elements, React will throw an error.
 
 Each JSX tags needs to be closed. You can use self-closing tags for elements that don't have children, eg., <img src="url" />
 
 React Fragments:- It allow components to return multiple elements without adding extra nodes to the DOM.
 
-
 Dynamic Values in JSX
 
-1: Using Variables 
+1: Using Variables
 You can anbed any JavaScript variable within JSX by enclosing it in curly braces. The value of the variable will be inserted into the DOM at the respective location.
 
 2: Expressions
@@ -44,36 +40,37 @@ Use conditional operator to show user can watch movie or not.
 4 Using Conditional fns..
 
 Import and Exports
-  Default Export & Import ---> A File can have only one default export.
+Default Export & Import ---> A File can have only one default export.
 
-  Named Export & Import ---> A file can have multiple named export. While importing it, the import names must be same as export name.
+Named Export & Import ---> A file can have multiple named export. While importing it, the import names must be same as export name.
 
-  Mixed Export & Import ---> A file can have One Default & Multiple Named export called Mixed Export... 
+Mixed Export & Import ---> A file can have One Default & Multiple Named export called Mixed Export...
 
 Passing JSX as Props:-
 
 JSX value should be either an expression or a quoted JSX text.
 We can pass JSX as Props.
-  To access the child of parent, have to call it by {props.children}
+To access the child of parent, have to call it by {props.children}
 
 CSS Style in JSX
-    Inline CSS ---> Inline styles are applied directly to the HTML elements via the style attribute. This approach uses JavaScript objects to define CSS properties and values.
+Inline CSS ---> Inline styles are applied directly to the HTML elements via the style attribute. This approach uses JavaScript objects to define CSS properties and values.
 
 # 1. JavaScript Object Syntax
 
 Inline styles in React are specified using JavaScript objects. Property names are written in camelCase instead of the traditional Css kebab-case.
 
 const style = {
-  backgroundColor: 'blue',
-  fontSize: '16px',
+backgroundColor: 'blue',
+fontSize: '16px',
 };
 
 # 2. Units
+
 For most numeric values, you need to specify units as a strong(e.g., '16px'). Some properties, like Z-Index, can take numeric values directly.
 
 const style = {
-  padding: '10px',
-  z-index: 1,
+padding: '10px',
+z-index: 1,
 }
 
 # 3. Performance Considerations
@@ -81,56 +78,62 @@ const style = {
 Defining inline styles directly within he JSX can lead to performance issues a new object is created on every render. To avoid this, define styles outside of the render method or as constrants.
 
 const buttonStyle = {
-  backgroundColor: 'blue',
-  color:'white',
+backgroundColor: 'blue',
+color:'white',
 }
 
 function MyButton() {
-  return <button style ={buttonStyle}> click Me </button>;
+return <button style ={buttonStyle}> click Me </button>;
 }
 
 # CSS conditional stylings in React js
 
 You can use ternary operators to add conditional stylings to your CSS.
 
-* Styled Components in React.js
-    <npm install styled-components></>
+- Styled Components in React.js
+  <npm install styled-components></>
 
 Install Tailwind Css for Vite
-    <npm install -D tailwindcss postcss autoprefixer>
-    <npx tailwindcss init -p>
+<npm install -D tailwindcss postcss autoprefixer>
+<npx tailwindcss init -p>
 
 # Applying padding in Tailwind
-  * Using Extended Spacing Scale: If you've exteended the spacing scale, you can use the custom classes:
-  <div class="py-12 px-6">Content</div>
 
-  * Using Arbitrary Values:
-  You can use arbitrary vlaues directly:
-  <div class="py-[3.2rem] px-[1.2rem]">Content</div>
+- Using Extended Spacing Scale: If you've exteended the spacing scale, you can use the custom classes:
+<div class="py-12 px-6">Content</div>
+
+- Using Arbitrary Values:
+You can use arbitrary vlaues directly:
+<div class="py-[3.2rem] px-[1.2rem]">Content</div>
 
 # V23- Event Handling in React.js
-  Event handling in React.js is process of capturing and responding to user interactions, such as clicks, keystrokes, or form submissions, within a React application.
-  Event Handling in React follows a similar pattern to standard JavaScript event handling but with some key differences, such as using synthetic event for cross-browser compatibility and providing consistent event handling across different elements and browsers.
+
+Event handling in React.js is process of capturing and responding to user interactions, such as clicks, keystrokes, or form submissions, within a React application.
+Event Handling in React follows a similar pattern to standard JavaScript event handling but with some key differences, such as using synthetic event for cross-browser compatibility and providing consistent event handling across different elements and browsers.
 
 # SyntheticBasedEvent in React:-
-  When you handle events in React, like clicking a button or typing in an input box, React wraps the native browser events in something called a Synthetic Event. 
 
-* Event naming conventions:-
-    camelCase: Event names in JSX should be written in camelCase. uses prefix with 'on'.
-    Eg:- onClick, onChange, onSubmit.
+When you handle events in React, like clicking a button or typing in an input box, React wraps the native browser events in something called a Synthetic Event.
 
-* Function Naming Conventions 
-prefix with 'handle': It is a comman convention to prefix event handler functions with 'handle' to clearly indicate their purpose.
-Eg:- handleSubmit, handleChange...
+- Event naming conventions:-
+  camelCase: Event names in JSX should be written in camelCase. uses prefix with 'on'.
+  Eg:- onClick, onChange, onSubmit.
+
+- Function Naming Conventions
+  prefix with 'handle': It is a comman convention to prefix event handler functions with 'handle' to clearly indicate their purpose.
+  Eg:- handleSubmit, handleChange...
 
 # V24- Passing Events handlers as Props:-
-  Passing event handlers as props in React.js is a common pattern used to allow child componants to communicate with parent components.
-  This pattern is useful in various scenarios, including:-
-  * Form Handling:- Event handlers like onChange or onSubmit to form components allows the child components to update the form data and notify the parent component of changes.
 
-  * User Interaction:- Event handlers like onClick can be passed to interactive elements (buttons, links) to trigger specific actions in the parent component, such as opening a modal or navigating to a different page.
+Passing event handlers as props in React.js is a common pattern used to allow child componants to communicate with parent components.
+This pattern is useful in various scenarios, including:-
+
+- Form Handling:- Event handlers like onChange or onSubmit to form components allows the child components to update the form data and notify the parent component of changes.
+
+- User Interaction:- Event handlers like onClick can be passed to interactive elements (buttons, links) to trigger specific actions in the parent component, such as opening a modal or navigating to a different page.
 
 # V25- Event Propagation in React_Capturing, Bubbling, and Practical Implementation
+
 Event Propagation Refers to the process of how events propagate or travel through the DOM hierarchy.
 
 In JS, There are 2 phase of event propagation- Capturing phase, Bubbling phase.
@@ -140,27 +143,28 @@ Capturing Phase :- The event starts from the root of the DOM and goes down to th
 Bubbling Phase:- The event starts from the target element.By default nature of Event Propagation is Bubbling...
 
 # V26- React States (useState Hook)
+
 State refers to an Object that holds data or information about the component.
 State is dynamic and mutable, meaning it can change over time usually in response to user actions, server responses or other events.
 
 useState:- It manages the state within function components, It allows you to declare and update state variable within a component.The function which starts with "use" is called hook...
 
 Syntax:-
-    <const[count, setCount]= useState(0)>
+<const[count, setCount]= useState(0)>
 
-* Need of State:-
-i) Dynamic UI Updates:- State allows your components to update dynamically in response to user input or other events. For Example:- in a form, the state might hold the current value of the input fields, updating in real-time as the user types.
-ii) Interactivity:- State makes your application interactive. such as clicks, form submissions, or keyboard inputs.
+- Need of State:-
+  i) Dynamic UI Updates:- State allows your components to update dynamically in response to user input or other events. For Example:- in a form, the state might hold the current value of the input fields, updating in real-time as the user types.
+  ii) Interactivity:- State makes your application interactive. such as clicks, form submissions, or keyboard inputs.
 
 # V27- How React State Works
 
 React Reconciliation is the process through which React updates the Browser DOM.
 Diffing short for Differences Algorithm is used to differentiate the DOM tree for efficient updates.
 
-* How rendering Works:-
-On the very first time react renders Parent Component, Child Component, AnotherChild Component and Sibling Components.
-After that, if there is changes in Parent Component, React will re-render ParentComponent and its Children.
-Sibling Component is not affected by the state change in Parent Component. Therefore, it will not be re-rendered.
+- How rendering Works:-
+  On the very first time react renders Parent Component, Child Component, AnotherChild Component and Sibling Components.
+  After that, if there is changes in Parent Component, React will re-render ParentComponent and its Children.
+  Sibling Component is not affected by the state change in Parent Component. Therefore, it will not be re-rendered.
 
 # V28- Why the state value does not reset to its initial value on re-render?
 
@@ -182,13 +186,13 @@ This approach avoid duplication and keeps the state simpler and more manageable.
 
 Ex:- const userCount= users.length;
 
-* Avoid Redundancy, Consistency, Simplicity
+- Avoid Redundancy, Consistency, Simplicity
 
 # V31- Lifting the State Up in React
 
 Lifting State Up is a pattern in React where you move the state from child compponents to a common parent component so that multiple child components can share and synchronize this state.
-  * Use Case:- When you have two or more components that need to share the same state, you should lift the state up to their nearest common ancestor/parent. This allows these components to stay in sync and ensures that the state is managed in a single place.
 
+- Use Case:- When you have two or more components that need to share the same state, you should lift the state up to their nearest common ancestor/parent. This allows these components to stay in sync and ensures that the state is managed in a single place.
 
 # V42- Keys in Reacts.js
 
@@ -196,21 +200,19 @@ A string or a number that uniquely identifies it among other items in that array
 Keys tell React which array item each component corresponds to, so that it can match them up later.
 This becomes important if your array items can move.(due to sorting), get inserted, or get deleted.
 
-* Rules
-    Keys must be unique among siblings
-    Keys must not change
-
+- Rules
+  Keys must be unique among siblings
+  Keys must not change
 
 # V43- Short Circuit Evaluation
 
 Logical OR (||):-
-      Syntax:- expression-1 || expression-2
+Syntax:- expression-1 || expression-2
 If expression-1 is truthy, return expression-1. Otherwise, return expression-2.
 
 Logical AND (&&):-
-      Syntax:- expression-1 && expression-2
+Syntax:- expression-1 && expression-2
 If expression-1 is falsy, return expression-1. Otherwise, return expression-2.
-
 
 # V44- React Hooks Rules
 

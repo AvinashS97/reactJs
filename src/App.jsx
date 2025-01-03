@@ -37,7 +37,6 @@ export const App = () => {
     {/* <Todo /> */}
     < ShortCircuitExample />
 
-
     {/* <Footer /> */}
    </section >
 )
