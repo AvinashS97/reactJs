@@ -1,5 +1,4 @@
 // # V43- Short Circuit Evaluation
-
 import './Hooks.css'
 import { useState } from 'react'
 
@@ -27,4 +26,4 @@ const ShortCircuitExample = () => {
   )
 }
 
-export default ShortCircuitExample
+export default ShortCircuitExample;

@@ -176,6 +176,7 @@ So mainly, React preserves the state values to ensure the component behaves pred
 # V29- React Js State Challenge
 
 # V30- Derived State- Improve State Management and Remove Redundancy & Dependency.
+
 Derived State is any state that can be computed based on other state or props. It is not stored directly in the component's state but is calculated when needed.
 This approach avoid duplication and keeps the state simpler and more manageable.
 
@@ -184,6 +185,7 @@ Ex:- const userCount= users.length;
 * Avoid Redundancy, Consistency, Simplicity
 
 # V31- Lifting the State Up in React
+
 Lifting State Up is a pattern in React where you move the state from child compponents to a common parent component so that multiple child components can share and synchronize this state.
   * Use Case:- When you have two or more components that need to share the same state, you should lift the state up to their nearest common ancestor/parent. This allows these components to stay in sync and ensures that the state is managed in a single place.
 
@@ -198,4 +200,24 @@ This becomes important if your array items can move.(due to sorting), get insert
     Keys must be unique among siblings
     Keys must not change
 
+
 # V43- Short Circuit Evaluation
+
+Logical OR (||):-
+      Syntax:- expression-1 || expression-2
+If expression-1 is truthy, return expression-1. Otherwise, return expression-2.
+
+Logical AND (&&):-
+      Syntax:- expression-1 && expression-2
+If expression-1 is falsy, return expression-1. Otherwise, return expression-2.
+
+
+# V44- React Hooks Rules
+
+Hooks let you use different React features from out components.
+It starts with 'use'... (useState, useEffect, useReducer).
+It can only be used at the top level of your component.
+(Do not call Hooks inside loops, conditions, or nested functions.)
+Call Hooks only from React function components or custom Hooks. Do not call Hooks from regular JavaScript functions or in class components.
+You can also create your own custom hooks by creating functions starting with use.... This ensures that React can identify a Hooks (useFetch, useForm).
+Ensure Hooks are called in the same order.
