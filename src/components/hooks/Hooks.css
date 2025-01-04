@@ -34,11 +34,11 @@
   }
   
   button {
-    padding: 10px 15px;
+    padding: 0.6rem 0;
     border: none;
     border-radius: 4px;
-    background-color: #3498db;
-    color: white;
+    background-color: rgb(4, 4, 4);
+    color: #fff;
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -57,3 +57,9 @@
     box-shadow: 0 0 4px rgba(41, 128, 185, 0.8);
   }
   
+  p {
+    margin-bottom: 1.6rem;
+    & span {
+      font-size: 2.4rem;
+    }
+  }

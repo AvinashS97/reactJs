@@ -9,7 +9,8 @@
 // import  "./components/EV.css";
 // import { LiftingState } from "./components/LiftStateUp";
 // import { State } from "./components/hooks/State";
-import ShortCircuitExample from "./components/hooks/ShortCircuit";
+// import ShortCircuitExample from "./components/hooks/ShortCircuit";
+import { Counter } from "./components/hooks/useState";
 
 
 // import { Todo } from "./projects/Todo/Todo";
@@ -35,7 +36,8 @@ export const App = () => {
     {/* {<LiftingState/>} */}
     {/* <ToggleSwitch /> */}
     {/* <Todo /> */}
-    < ShortCircuitExample />
+    {/* < ShortCircuitExample /> */}
+    <Counter />
 
     {/* <Footer /> */}
    </section >
