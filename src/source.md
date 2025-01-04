@@ -142,7 +142,7 @@ Capturing Phase :- The event starts from the root of the DOM and goes down to th
 
 Bubbling Phase:- The event starts from the target element.By default nature of Event Propagation is Bubbling...
 
-# V26- React States (useState Hook)
+# V26- React States (useState() Hook)
 
 State refers to an Object that holds data or information about the component.
 State is dynamic and mutable, meaning it can change over time usually in response to user actions, server responses or other events.
@@ -223,3 +223,10 @@ It can only be used at the top level of your component.
 Call Hooks only from React function components or custom Hooks. Do not call Hooks from regular JavaScript functions or in class components.
 You can also create your own custom hooks by creating functions starting with use.... This ensures that React can identify a Hooks (useFetch, useForm).
 Ensure Hooks are called in the same order.
+
+# V45- UseState() Hook
+
+Function passed to useState() and setState() runs twice during development mode to prevent developers from running side effects.
+Side effects in programming refer to changes or interactions that occur outside the scope of a function or block of code.
+React.js compares previous state and new state using Object.is(), if it finds both are same then it will ignore re-rendering.
+React.js batches all setStates() inside a event handlers and run them at the same time, so if you try to access the value immediately after setting a state, then you will get old value as its asynchronous.
