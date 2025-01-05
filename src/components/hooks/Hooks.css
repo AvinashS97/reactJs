@@ -72,12 +72,19 @@
   border-radius: 10px;
 }
 
+/* Heading styling */
+
 .containerstate-container h1 {
+  font-size: 2.5rem;
   color: #2c3e50;
+  margin-bottom: 5px;
 }
 
+/* Paragraph styling */
+
 .containerstate-container p {
-  margin-bottom: 1.5rem;
+  color: #666;
+  margin: 5px 0;
   font-size: 1.5rem;
 }
 

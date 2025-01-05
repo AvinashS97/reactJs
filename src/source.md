@@ -230,3 +230,5 @@ Function passed to useState() and setState() runs twice during development mode 
 Side effects in programming refer to changes or interactions that occur outside the scope of a function or block of code.
 React.js compares previous state and new state using Object.is(), if it finds both are same then it will ignore re-rendering.
 React.js batches all setStates() inside a event handlers and run them at the same time, so if you try to access the value immediately after setting a state, then you will get old value as its asynchronous.
+
+# V46- useState() Challenge
