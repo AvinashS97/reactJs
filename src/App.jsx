@@ -1,7 +1,7 @@
 // import NetflixSeries, {Footer, Header} from "./components/NetflixSeries";
 // import NetflixSeries from "./components/NetflixSeries";
 // import "./components/Netflix.css"
-// import "./components/Netflix.module.css"; 
+// import "./components/Netflix.module.css";
 // import { EventHandling } from "./components/EventHandling";
 // import { EventProps } from "./components/EventProps";
 // import { EventPropagation} from "./components/EventPropagation";
@@ -11,8 +11,7 @@
 // import { State } from "./components/hooks/State";
 // import ShortCircuitExample from "./components/hooks/ShortCircuit";
 // import { Counter } from "./components/hooks/useState";
-import CounterChallenge from "./components/hooks/useState/Challenge";
-
+import CounterChallenge from './components/hooks/useState/Challenge'
 
 // import { Todo } from "./projects/Todo/Todo";
 // import { ToggleSwitch } from "./projects/ToggleSwitch/ToggleSwitch";
@@ -23,29 +22,24 @@ import CounterChallenge from "./components/hooks/useState/Challenge";
 // import { Footer } from "./components/NetflixSeries";
 
 export const App = () => {
-
   return (
-    <section className="container" >
+    <section className='container'>
       {/* <h1 className="card-heading">List of Best Netflix Series</h1> */}
-    {/* < Header/> */}
-    {/* <NetflixSeries /> */}
-    {/* <EventHandling /> */}
-    {/* <EventProps/> */}
-    {/* <EventPropagation /> */}
-    {/* <State /> */}
-    {/* <DerivedState /> */}
-    {/* {<LiftingState/>} */}
-    {/* <ToggleSwitch /> */}
-    {/* <Todo /> */}
-    {/* < ShortCircuitExample /> */}
-    {/* <Counter /> */}
-    <CounterChallenge />
+      {/* < Header/> */}
+      {/* <NetflixSeries /> */}
+      {/* <EventHandling /> */}
+      {/* <EventProps/> */}
+      {/* <EventPropagation /> */}
+      {/* <State /> */}
+      {/* <DerivedState /> */}
+      {/* {<LiftingState/>} */}
+      {/* <ToggleSwitch /> */}
+      {/* <Todo /> */}
+      {/* < ShortCircuitExample /> */}
+      {/* <Counter /> */}
+      <CounterChallenge />
 
-    {/* <Footer /> */}
-   </section >
-)
-};
-
-
-
-
+      {/* <Footer /> */}
+    </section>
+  )
+}

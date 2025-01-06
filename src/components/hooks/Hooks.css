@@ -1,61 +1,61 @@
 /* Hooks.css */
 
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    font-family: Arial, sans-serif;
-    color: #333;
-  }
-  
-  .short-container h1 {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-    text-align: center;
-    color: #2c3e50;
-  }
-  
-  .short-container p {
-    font-size: 1rem;
-    margin: 10px 0;
-    text-align: center;
-    color: #16a085;
-  }
-  
-  .grid-three-cols {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    margin-top: 20px;
-  }
-  
-  button {
-    padding: 0.6rem 0;
-    border: none;
-    border-radius: 4px;
-    background-color: rgb(4, 4, 4);
-    color: #fff;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
-  
-  button:active {
-    background-color: #1c5985;
-  }
-  
-  button:focus {
-    outline: none;
-    box-shadow: 0 0 4px rgba(41, 128, 185, 0.8);
-  }
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.short-container h1 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #2c3e50;
+}
+
+.short-container p {
+  font-size: 1rem;
+  margin: 10px 0;
+  text-align: center;
+  color: #16a085;
+}
+
+.grid-three-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+button {
+  padding: 0.6rem 0;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(4, 4, 4);
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:active {
+  background-color: #1c5985;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 4px rgba(41, 128, 185, 0.8);
+}
 
 /* CSS of index.jsx */
 
@@ -97,7 +97,7 @@
   padding: 10px 20px;
   font-size: 1rem;
   color: #fff;
-  background-color: #007BFF;
+  background-color: #007bff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -143,7 +143,7 @@
 }
 
 /* Input field styling */
-.state-container input[type="number"] {
+.state-container input[type='number'] {
   width: 60px;
   padding: 5px;
   margin-left: 10px;
