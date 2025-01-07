@@ -7,30 +7,47 @@
 
 //? Step Increment: Add an input field to allow users to set the step value by which the counter shouldincrement or decrement.
 
+import { useState } from 'react'
 import '../Hooks.css'
 
 const CounterChallenge = () => {
+
+  const [count, setCount] = useState(0);
+  const [step, setStep] = useState(0);
+
+  const handleIncrement = () => {
+    setCount (count + step);
+  }
+
+  const handleDecrement = () => {
+    setCount (count - step);
+  }
+
+  const handleReset = () => {
+    setCount (0);
+  }
+
   return (
     <div className='container state-container'>
       <h1>useState Challenge</h1>
       <p>
-        Count : <span> 0 </span>
+        Count : <span>{count}</span>
       </p>
 
       <div>
         <label>
           Step:
-          <input type='number' />
+          <input type='number' value={step} onChange={(e)=>setStep(Number(e.target.value))} />
         </label>
-      </div>
+      </div> 
 
       <div className='grid-three-cols'>
-        <button>Increment</button>
-        <button>Decrement</button>
-        <button>Reset</button>
+        <button onClick={handleIncrement} disabled={count >= 100 } >Increment</button>
+        <button onClick={handleDecrement} disabled={count<= 0} >Decrement</button>
+        <button onClick={handleReset}>Reset</button>
       </div>
     </div>
   )
 }
 
-export default CounterChallenge
+export default CounterChallenge;
