@@ -232,3 +232,8 @@ React.js compares previous state and new state using Object.is(), if it finds bo
 React.js batches all setStates() inside a event handlers and run them at the same time, so if you try to access the value immediately after setting a state, then you will get old value as its asynchronous.
 
 # V46- useState() Challenge
+
+
+# V47- Controlled and UnControlled Inputs in React.js
+Controlled component in React are those where form data is handled by React component state.
+A controlled input is a form element (like <input>, <textarea>, or <select>) whose value is controlled by React state.
