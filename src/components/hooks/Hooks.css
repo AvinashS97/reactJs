@@ -60,7 +60,7 @@ button:focus {
 /* CSS of index.jsx */
 
 /* Container styling */
-.containerstate-container {
+.state-container  {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -72,21 +72,21 @@ button:focus {
 
 /* Heading styling */
 
-.containerstate-container h1 {
+.state-container h1 {
   font-size: 2.5rem;
   color: #2c3e50;
-  margin-bottom: 5px;
+  margin-bottom:5px;
 }
 
 /* Paragraph styling */
 
-.containerstate-container p {
+.state-container p {
   color: #666;
   margin: 5px 0;
   font-size: 1.5rem;
 }
 
-.containerstate-container button {
+.state-container button {
   padding: 1rem 1.5rem;
   font-size: 1.6rem;
 }
