@@ -235,5 +235,17 @@ React.js batches all setStates() inside a event handlers and run them at the sam
 
 
 # V47- Controlled and UnControlled Inputs in React.js
-Controlled component in React are those where form data is handled by React component state.
+*Controlled component* in React are those where form data is handled by React component state.
 A controlled input is a form element (like <input>, <textarea>, or <select>) whose value is controlled by React state.
+This means:
+  * State Management: The value of the input field is controlled by React State (useState or this.state in class components).
+  * Event Handlers: Changes to the input field (like typing into a text field) are handled by React event handlers (onChange, onBlur, etc.)
+  * State Update: When the user interacts with the form input, React state is updated through event handlers, and the input value reflects the current state value.
+
+*UnControlled Component* in React are those where form data is handled by the DOM itself.
+This means:
+  * Direct DOM Manipulation: The value of the input field is controlled by the DOM (document.getElementById,etc.).
+  * Event Handling: Changes are directly handled by DOM events (onchange, onblur, etc.).
+  * Accessing Form Data: Form data is accessed through refs or DOM traversal methods, not through React state.
+  
+<!-- 03:04 -->
