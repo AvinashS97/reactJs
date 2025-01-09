@@ -247,5 +247,10 @@ This means:
   * Direct DOM Manipulation: The value of the input field is controlled by the DOM (document.getElementById,etc.).
   * Event Handling: Changes are directly handled by DOM events (onchange, onblur, etc.).
   * Accessing Form Data: Form data is accessed through refs or DOM traversal methods, not through React state.
-  
-<!-- 03:04 -->
+
+Pros: React has complete control over the input values, making it straightforward to implement features like validation and conditional formatting based on state.
+Easier to handle form submission and integration with React's lifecycle methods.
+Enable clear data flow and centralized state management within React components.
+
+Cons: Require more code compared to uncontrolled components due to state management.
+Can lead to more re-renders if not optimized, although React handles this efficiently in cases.
