@@ -65,13 +65,13 @@ button:focus {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
   padding: 20px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 }
 
 /* Heading styling */
-
 .state-container h1 {
   font-size: 2.5rem;
   color: #2c3e50;
@@ -79,7 +79,6 @@ button:focus {
 }
 
 /* Paragraph styling */
-
 .state-container p {
   color: #2b2a2a;
   margin: 10px 0;
@@ -171,4 +170,26 @@ button:focus {
 
 .grid-three-cols button:last-child:hover {
   background-color: #a71d2a;
+}
+
+/* CSS for Controlled.jsx */
+
+/* Form label styling */
+form label {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+/* Input field styling */
+form input[type="text"] {
+  max-width: 400px;
+  padding: 8px 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
 }

@@ -6,7 +6,7 @@ const ControlledForm = () => {
 
   const handleChange = event => {
     setName(event.target.value);
-  }
+  };
 
   const handleSubmit = event => {
 
