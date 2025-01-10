@@ -39,7 +39,7 @@ const ControlledForm = () => {
         </button>
       </form>
     </section>
-  )
-}
+  );
+};
 
 export default ControlledForm;

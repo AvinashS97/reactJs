@@ -19,15 +19,15 @@ const CounterChallenge = () => {
 
   const handleIncrement = () => {
     setCount (count + step);
-  }
+  };
 
   const handleDecrement = () => {
     setCount (count - step);
-  }
+  };
 
   const handleReset = () => {
     setCount (0);
-  }
+  };
 
   return (
     <div className='container state-container'>
@@ -49,7 +49,7 @@ const CounterChallenge = () => {
         <button onClick={handleReset}>Reset</button>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default CounterChallenge;
