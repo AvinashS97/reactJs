@@ -12,7 +12,8 @@
 // import ShortCircuitExample from "./components/hooks/ShortCircuit";
 // import { Counter } from "./components/hooks/useState";
 // import CounterChallenge from './components/hooks/useState/Challenge'
-import ControlledForm from './components/hooks/useState/Controlled'
+// import ControlledForm from './components/hooks/useState/Controlled'
+import { RegistrationForm } from './components/hooks/useState/Registration'
 
 // import { Todo } from "./projects/Todo/Todo";
 // import { ToggleSwitch } from "./projects/ToggleSwitch/ToggleSwitch";
@@ -39,7 +40,9 @@ export const App = () => {
       {/* < ShortCircuitExample /> */}
       {/* <Counter /> */}
       {/* <CounterChallenge /> */}
-      <ControlledForm />
+      {/* <ControlledForm /> */}
+        
+      < RegistrationForm />
 
       {/* <Footer /> */}
     </section>
