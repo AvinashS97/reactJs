@@ -13,7 +13,9 @@
 // import { Counter } from "./components/hooks/useState";
 // import CounterChallenge from './components/hooks/useState/Challenge'
 // import ControlledForm from './components/hooks/useState/Controlled'
-import { RegistrationForm } from './components/hooks/useState/Registration'
+// import { RegistrationForm } from './components/hooks/useState/Registration'
+
+import { RegistrationFormReact } from "./components/hooks/useState/RegistrationReact"
 
 // import { Todo } from "./projects/Todo/Todo";
 // import { ToggleSwitch } from "./projects/ToggleSwitch/ToggleSwitch";
@@ -41,8 +43,8 @@ export const App = () => {
       {/* <Counter /> */}
       {/* <CounterChallenge /> */}
       {/* <ControlledForm /> */}
-        
-      < RegistrationForm />
+      {/* < RegistrationForm /> */}
+      <RegistrationFormReact />
 
       {/* <Footer /> */}
     </section>

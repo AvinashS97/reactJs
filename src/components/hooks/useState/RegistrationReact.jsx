@@ -1,3 +1,6 @@
+// V49: React Form Handling: The right way to Manage Multiple Input Fields with one State Variable.
+
+
 //* Using Object State with Spread Operator
 //todo  Tasks:
 //? Refactor the registration form to use a single object (formData) as the initial state.
