@@ -15,6 +15,8 @@ export const ContactForm = () => {
                     <label htmlFor="message">Message</label>
 
                     <textarea type="password" name="message" required autoComplete="off" rows="6" />
+
+                    <button type="submit"> Send Message</button>
                 </form>
             </div>
         </div>

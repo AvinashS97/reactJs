@@ -16,6 +16,7 @@
 // import { RegistrationForm } from './components/hooks/useState/Registration';
 // import { RegistrationFormReact } from "./components/hooks/useState/RegistrationReact";
 
+// import { ContactForm } from "./components/hooks/useState/ContactForm";
 import { LoginForm } from "./components/hooks/useState/LoginForm";
 
 // import { Todo } from "./projects/Todo/Todo";
@@ -47,6 +48,7 @@ export const App = () => {
       {/* < RegistrationForm /> */}
       {/* <RegistrationFormReact /> */}
       < LoginForm />
+      {/* < ContactForm /> */}
 
       {/* <Footer /> */}
     </section>

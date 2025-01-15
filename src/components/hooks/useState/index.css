@@ -36,9 +36,6 @@ body {
   font-family: Montserrat, Arial, Helvetica, sans-serif;
   background-color: #f7f7f7;
 }
-* {
-  box-sizing: border-box;
-}
 
 /* Add padding to container elements */
 .container {
@@ -89,7 +86,8 @@ input[type="phone"]:focus {
 }
 
 /* Set a style for all buttons */
-button {
+
+form button {
   background-color: #0eb7f4;
   color: white;
   padding: 14px 20px;
@@ -103,7 +101,11 @@ button {
   border-radius: 10px;
 }
 
-button:hover {
+form button {
+  background-color: #0eb7f4;
+}
+
+form button:hover {
   opacity: 1;
 }
 
