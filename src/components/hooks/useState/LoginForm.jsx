@@ -3,19 +3,19 @@ import { useState } from "react";
 
 export const LoginForm = () => {
 
+    // 1st way to manage multiple input fields:-
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
-
     const handleFormSubmit = (e) => {
         e.preventDefault();
-
         const loginData = {
             username,
             password,
         };
-
         console.log(loginData);
     };
+
+
     return (
         <div className="container">
             <div className="card">

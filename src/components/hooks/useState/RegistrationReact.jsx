@@ -91,7 +91,7 @@ export const RegistrationFormReact = () => {
           <input
             type="phone"
             name="phoneNumber"
-            placeholder="9876543211"
+            placeholder="9876543210"
             required
             value={user.phoneNumber}
             onChange={handleInputChange}

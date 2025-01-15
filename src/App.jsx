@@ -16,8 +16,8 @@
 // import { RegistrationForm } from './components/hooks/useState/Registration';
 // import { RegistrationFormReact } from "./components/hooks/useState/RegistrationReact";
 
-// import { ContactForm } from "./components/hooks/useState/ContactForm";
-import { LoginForm } from "./components/hooks/useState/LoginForm";
+import { ContactForm } from "./components/hooks/useState/ContactForm";
+// import { LoginForm } from "./components/hooks/useState/LoginForm";
 
 // import { Todo } from "./projects/Todo/Todo";
 // import { ToggleSwitch } from "./projects/ToggleSwitch/ToggleSwitch";
@@ -47,8 +47,8 @@ export const App = () => {
       {/* <ControlledForm /> */}
       {/* < RegistrationForm /> */}
       {/* <RegistrationFormReact /> */}
-      < LoginForm />
-      {/* < ContactForm /> */}
+      {/* < LoginForm /> */}
+      < ContactForm />
 
       {/* <Footer /> */}
     </section>
