@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import './index.css'
+import { useState } from 'react';
+import './index.css';
 
 export const ContactForm = () => {
   //* 1st way to manage Multiple input fields:-
