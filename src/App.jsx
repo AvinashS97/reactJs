@@ -14,9 +14,11 @@
 // import CounterChallenge from './components/hooks/useState/Challenge';
 // import ControlledForm from './components/hooks/useState/Controlled';
 // import { RegistrationForm } from './components/hooks/useState/Registration';
-// import { RegistrationFormReact } from "./components/hooks/useState/RegistrationReact";
+import { RegistrationFormReact } from "./components/hooks/useState/RegistrationReact";
 
-import { ContactForm } from "./components/hooks/useState/ContactForm";
+// import { ReactUseEffect } from "./components/hooks/useEffect"
+
+// import { ContactForm } from "./components/hooks/useState/ContactForm";
 // import { LoginForm } from "./components/hooks/useState/LoginForm";
 
 // import { Todo } from "./projects/Todo/Todo";
@@ -46,9 +48,10 @@ export const App = () => {
       {/* <CounterChallenge /> */}
       {/* <ControlledForm /> */}
       {/* < RegistrationForm /> */}
-      {/* <RegistrationFormReact /> */}
+      <RegistrationFormReact />
       {/* < LoginForm /> */}
-      < ContactForm />
+      {/* < ContactForm /> */}
+      {/* < ReactUseEffect /> */}
 
       {/* <Footer /> */}
     </section>

@@ -29,6 +29,7 @@ h6 {
 h1 {
   font-size: 4.2rem;
   font-weight: bold;
+  color: #0eb7f4;
   /* margin-bottom: 1.6rem; */
 }
 
@@ -130,6 +131,7 @@ span {
 
 .summary p {
   font-size: 16px;
+  color: #1c2833;
 }
 
 .summary span {
@@ -139,10 +141,8 @@ span {
 label,
 p {
   font-size: 1.6rem;
-}
-p {
   margin-bottom: 3.2rem;
-  font-size: 1.8rem;
+  color: #1c2833;
 }
 
 /* Change styles for signup button on extra small screens */

@@ -254,3 +254,16 @@ Enable clear data flow and centralized state management within React components.
 
 Cons: Require more code compared to uncontrolled components due to state management.
 Can lead to more re-renders if not optimized, although React handles this efficiently in cases.
+
+# V52- useEffect Hook 
+The useEffect hook in React is used for handling side effect in functional components.
+
+    < useEfffect(()=> {
+      //Your side effect code here
+
+      return ()=> {
+        // Cleanup code Here(optional)
+      };
+    },[dependencies])>
+
+* External dource of data ke saath deal krna ho to useEffect hook ka use kre.
