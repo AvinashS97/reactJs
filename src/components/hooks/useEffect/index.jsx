@@ -5,5 +5,5 @@ export const ReactUseEffect = () => {
         <div>
             <h1>Hello, useEffect! </h1>
         </div>
-    )
-}
+    );
+};
