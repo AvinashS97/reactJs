@@ -1,5 +1,5 @@
-import './index.css'
-import { useState } from 'react'
+import './index.css';
+import { useState } from 'react';
 
 export const LoginForm = () => {
   //* 1st way to manage multiple input fields:-
@@ -23,7 +23,7 @@ export const LoginForm = () => {
   const handleInputChange = (e) => {
     const { name, value } = e.target
     LoginUser(prev => ({ ...prev, [name]: value }))
-  }
+  };
 
   return (
     <div className='container'>
@@ -56,5 +56,5 @@ export const LoginForm = () => {
         </form>
       </div>
     </div>
-  )
-}
+  );
+};
