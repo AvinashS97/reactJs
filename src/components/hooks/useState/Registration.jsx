@@ -1,6 +1,5 @@
 // V48: Registration Forms in React: Handling Multiple Input Fields with useState-The hard way
 
-
 //* Registration Form Using Multiple State Variables
 //! Don't use this way to create Form B/C its very lengthy process.
 

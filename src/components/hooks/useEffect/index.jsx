@@ -1,3 +1,5 @@
+//! V52: useEffect Hook with Dependency Array.
+
 import "./index.css";
 
 export const ReactUseEffect = () => {

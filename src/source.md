@@ -256,7 +256,7 @@ Cons: Require more code compared to uncontrolled components due to state managem
 Can lead to more re-renders if not optimized, although React handles this efficiently in cases.
 
 # V52- useEffect Hook 
-The useEffect hook in React is used for handling side effect in functional components.
+The useEffect hook in React is used for handling side-effect in functional components.
 
     < useEfffect(()=> {
       //Your side effect code here
@@ -266,4 +266,13 @@ The useEffect hook in React is used for handling side effect in functional compo
       };
     },[dependencies])>
 
-* External dource of data ke saath deal krna ho to useEffect hook ka use kre.
+* External source of data ke saath deal krna ho to useEffect hook ka use kre.
+* Initial Render: When the component mounts, useEffect can run its effect function to perform operations like data fetching.
+* Dependencies: The 2ndd argument, an array of dependencies, which determines when the effect should re-run. If any value in this array changes, the effect will re-run.
+* Cleanup: useEffect can return a cleanup function to clean up effect, such as unsubscribing from an event or clearing a timer.
+
+* Side-Effect => A side Effect is any operation that affects something outside the scope of a function (Pure function). In React, side effect are managed using hook like useEffect to ensure they are handled in a controlled an predictable manner. 
+This includes tasks like: Fetching Data as a Side Effect-
+When you fetch data in a React component, you're performing a side effect because:
+External Interaction: You're interacting with an external data source, such as an API or a server.
+State Updates: The fetched data will usually update the component's state, causing a re-render.
