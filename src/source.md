@@ -268,7 +268,7 @@ The useEffect hook in React is used for handling side-effect in functional compo
 
 * External source of data ke saath deal krna ho to useEffect hook ka use kre.
 * Initial Render: When the component mounts, useEffect can run its effect function to perform operations like data fetching.
-* Dependencies: The 2ndd argument, an array of dependencies, which determines when the effect should re-run. If any value in this array changes, the effect will re-run.
+* Dependencies: The 2nd argument, an array of dependencies, which determines when the effect should re-run. If any value in this array changes, the effect will re-run.
 * Cleanup: useEffect can return a cleanup function to clean up effect, such as unsubscribing from an event or clearing a timer.
 
 * Side-Effect => A side Effect is any operation that affects something outside the scope of a function (Pure function). In React, side effect are managed using hook like useEffect to ensure they are handled in a controlled an predictable manner. 
