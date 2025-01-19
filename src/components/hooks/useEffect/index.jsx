@@ -35,5 +35,3 @@ export const ReactUseEffect = () => {
         </div>
     );
 };
-
-// 18:35
