@@ -7,7 +7,7 @@
 
 import "./index.css";
 
-export const useEffectChallenge = ()=> {
+export const EffectChallenge = ()=> {
     return (
         <div className="containereffect-container">
             <h1>useEffect Challenge</h1>
@@ -15,5 +15,5 @@ export const useEffectChallenge = ()=> {
             <p>Name: <span> </span></p>
             <input type="text" />
         </div>
-    )
-}
+    );
+};
