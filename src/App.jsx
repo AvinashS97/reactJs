@@ -15,9 +15,10 @@
 // import ControlledForm from './components/hooks/useState/Controlled';
 // import { RegistrationForm } from './components/hooks/useState/Registration';
 // import { RegistrationFormReact } from "./components/hooks/useState/RegistrationReact";
+import { CleanUp } from "./components/hooks/useEffect/CleanUp"
 
 // import { ReactUseEffect } from "./components/hooks/useEffect/index";
-import { EffectChallenge } from "./components/hooks/useEffect/EffectChallenge";
+// import { EffectChallenge } from "./components/hooks/useEffect/EffectChallenge";
 
 // import { ContactForm } from "./components/hooks/useState/ContactForm";
 // import { LoginForm } from "./components/hooks/useState/LoginForm";
@@ -53,7 +54,8 @@ export const App = () => {
       {/* < LoginForm /> */}
       {/* < ContactForm /> */}
       {/* < ReactUseEffect /> */}
-      < EffectChallenge />
+      {/* < EffectChallenge /> */}
+      < CleanUp />
       
       {/* <Footer /> */}
     </section>
