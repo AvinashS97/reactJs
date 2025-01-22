@@ -8,17 +8,20 @@
 // import { DerivedState } from "./components/DerivedState";
 // import  "./components/EV.css";
 // import { LiftingState } from "./components/LiftStateUp";
+
 // import { State } from "./components/hooks/State";
 // import ShortCircuitExample from "./components/hooks/ShortCircuit";
+
 // import { Counter } from "./components/hooks/useState";
 // import CounterChallenge from './components/hooks/useState/Challenge';
 // import ControlledForm from './components/hooks/useState/Controlled';
 // import { RegistrationForm } from './components/hooks/useState/Registration';
 // import { RegistrationFormReact } from "./components/hooks/useState/RegistrationReact";
-import { CleanUp } from "./components/hooks/useEffect/CleanUp"
 
 // import { ReactUseEffect } from "./components/hooks/useEffect/index";
 // import { EffectChallenge } from "./components/hooks/useEffect/EffectChallenge";
+// import { CleanUp } from "./components/hooks/useEffect/CleanUp";
+import { NotToFetchApi } from "./components/hooks/useEffect/NotToFetchApi"
 
 // import { ContactForm } from "./components/hooks/useState/ContactForm";
 // import { LoginForm } from "./components/hooks/useState/LoginForm";
@@ -55,7 +58,8 @@ export const App = () => {
       {/* < ContactForm /> */}
       {/* < ReactUseEffect /> */}
       {/* < EffectChallenge /> */}
-      < CleanUp />
+      {/* < CleanUp /> */}
+      < NotToFetchApi />
       
       {/* <Footer /> */}
     </section>
