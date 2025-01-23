@@ -1,16 +1,23 @@
 //! V55: How NOT to fetch API data in React:
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./Pokemon.css";
 
-export const NotToFetchApi = () => {
+export const WayToFetchApi = () => {
     const [apiData, setApiData] = useState([]);
 
+  // fetch('https://jsonplaceholder.typicode.com/posts')
+  //   .then(res => res.json())
+  //   .then(data => setApiData(data))
+  //   .catch(error => console.log(error));
 
-  fetch('https://jsonplaceholder.typicode.com/posts')
+  useEffect(()=> {
+    fetch('https://jsonplaceholder.typicode.com/posts')
     .then(res => res.json())
     .then(data => setApiData(data))
-    .catch(error => console.log(error));
+  })
+  .catch((error) => console.log(error)
+  )
 
   return (
     <div className='container effect-container'>

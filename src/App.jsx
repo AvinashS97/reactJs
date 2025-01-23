@@ -21,7 +21,7 @@
 // import { ReactUseEffect } from "./components/hooks/useEffect/index";
 // import { EffectChallenge } from "./components/hooks/useEffect/EffectChallenge";
 // import { CleanUp } from "./components/hooks/useEffect/CleanUp";
-import { NotToFetchApi } from "./components/hooks/useEffect/NotToFetchApi"
+import { WayToFetchApi } from "./components/hooks/useEffect/WaysToFetchApi";
 
 // import { ContactForm } from "./components/hooks/useState/ContactForm";
 // import { LoginForm } from "./components/hooks/useState/LoginForm";
@@ -59,7 +59,7 @@ export const App = () => {
       {/* < ReactUseEffect /> */}
       {/* < EffectChallenge /> */}
       {/* < CleanUp /> */}
-      < NotToFetchApi />
+      < WayToFetchApi />
       
       {/* <Footer /> */}
     </section>
