@@ -21,19 +21,35 @@ export const WayToFetchApi = () => {
 
   const API = 'https://pokeapi.co/api/v2/pokemon/pikachu';
 
-  const fetchPokemon = () => {
-    fetch(API)
-      .then((res) => res.json())
-      .then((data) => {
-        setPokemon(data);
-        setLoading(false);
-      })
-      .catch((error) => {
-        console.log(error);
-        setError(error);
-        setLoading(false);
-      });
+  // const fetchPokemon = () => {
+  //   fetch(API)
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       setPokemon(data);
+  //       setLoading(false);
+  //     })
+  //     .catch((error) => {
+  //       console.log(error);
+  //       setError(error);
+  //       setLoading(false);
+  //     });
+  // };
+
+  //? V58: Data Fetching in React: Using Async Await & Try Catch 
+
+  const fetchPokemon = async () => {
+    try {
+      const res = await fetch(API);
+      const data = await res.json();
+      setPokemon(data);
+      setLoading(false);
+    } catch(error) {
+      console.log(error);
+      setError(error);
+      setLoading(false);
   };
+  };
+
 
   useEffect(() => {
     fetchPokemon()
