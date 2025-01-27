@@ -9,6 +9,8 @@
 // import  "./components/EV.css";
 // import { LiftingState } from "./components/LiftStateUp";
 
+import { UseRef } from "./components/hooks/useRefs/index";
+
 // import { State } from "./components/hooks/State";
 // import ShortCircuitExample from "./components/hooks/ShortCircuit";
 
@@ -21,7 +23,7 @@
 // import { ReactUseEffect } from "./components/hooks/useEffect/index";
 // import { EffectChallenge } from "./components/hooks/useEffect/EffectChallenge";
 // import { CleanUp } from "./components/hooks/useEffect/CleanUp";
-import { WayToFetchApi } from "./components/hooks/useEffect/WaysToFetchApi";
+// import { WayToFetchApi } from "./components/hooks/useEffect/WaysToFetchApi";
 
 // import { ContactForm } from "./components/hooks/useState/ContactForm";
 // import { LoginForm } from "./components/hooks/useState/LoginForm";
@@ -59,7 +61,8 @@ export const App = () => {
       {/* < ReactUseEffect /> */}
       {/* < EffectChallenge /> */}
       {/* < CleanUp /> */}
-      < WayToFetchApi />
+      {/* < WayToFetchApi /> */}
+      < UseRef />
       
       {/* <Footer /> */}
     </section>
