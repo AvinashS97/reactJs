@@ -283,9 +283,15 @@ State Updates: The fetched data will usually update the component's state, causi
       };
 
 # V61- useRef Hook in React to manage DOM elements and State easily
-useRef is a React Hook that lets you reference a value that's not needed for rendering.
+(It can hold a reference to a DOM element, allowing direct manipulation of that element.)
+
+useRef is a React Hook that let you reference a value that's not needed for rendering.
+
 Unlike states, it's directly mutable.
-You can access value of it;s using useRef.current;
+
+You can access value of its using useRef.current;
+
+Unlike useState, changes to useRef do not cause re-renders.
 
 Uncontrolled Components:
   * Uncontrolled components manage their own state internally and are typically used with refs.
