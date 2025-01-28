@@ -295,3 +295,7 @@ Unlike useState, changes to useRef do not cause re-renders.
 
 Uncontrolled Components:
   * Uncontrolled components manage their own state internally and are typically used with refs.
+
+# V62- No more forwardRef in React 19
+
+* forwardRef - Allows parent component to move down refs to their children. It gives a child component a reference to DOM entity created by its parent component in React.  This helps the child to read and modify the element form any location where it is used.
