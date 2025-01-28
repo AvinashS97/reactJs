@@ -9,7 +9,9 @@
 // import  "./components/EV.css";
 // import { LiftingState } from "./components/LiftStateUp";
 
-import { UseRef } from "./components/hooks/useRefs/index";
+import { ForwardRef } from "./components/hooks/useRefs/forwardRef"
+
+// import { UseRef } from "./components/hooks/useRefs/index";
 
 // import { State } from "./components/hooks/State";
 // import ShortCircuitExample from "./components/hooks/ShortCircuit";
@@ -62,7 +64,8 @@ export const App = () => {
       {/* < EffectChallenge /> */}
       {/* < CleanUp /> */}
       {/* < WayToFetchApi /> */}
-      < UseRef />
+      {/* < UseRef /> */}
+      < ForwardRef />
       
       {/* <Footer /> */}
     </section>
