@@ -300,3 +300,6 @@ Uncontrolled Components:
 
 * forwardRef - Allows parent component to move down refs to their children. It gives a child component a reference to DOM entity created by its parent component in React.  This helps the child to read and modify the element form any location where it is used.
                     < React.forwardRef ((props, ref) => { })>
+
+# V63: useId Hook in React:
+useId is a React Hook for generating unique Id's that cane be passed to accessibility attributes.

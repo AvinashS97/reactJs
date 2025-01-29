@@ -9,7 +9,9 @@
 // import  "./components/EV.css";
 // import { LiftingState } from "./components/LiftStateUp";
 
-import { ForwardRef } from "./components/hooks/useRefs/forwardRef"
+import { UseId } from "./components/hooks/useId/index";
+
+// import { ForwardRef } from "./components/hooks/useRefs/forwardRef"
 
 // import { UseRef } from "./components/hooks/useRefs/index";
 
@@ -65,8 +67,9 @@ export const App = () => {
       {/* < CleanUp /> */}
       {/* < WayToFetchApi /> */}
       {/* < UseRef /> */}
-      < ForwardRef />
-      
+      {/* < ForwardRef /> */}
+      < UseId />
+
       {/* <Footer /> */}
     </section>
   )
