@@ -42,5 +42,5 @@ const AfterReact19Input = ({ label, ref }) => {
             <label htmlFor={id}>{label}</label>
             <input type="text" ref={ref} />
         </div>
-    )
-}
+    );
+};

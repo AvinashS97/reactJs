@@ -21,5 +21,5 @@ export const UseRef = () => {
             <input type="text" id="password" ref={password} /> <br />
             <button> Submit </button>
         </form>
-    )
+    );
 };
