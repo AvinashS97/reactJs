@@ -299,7 +299,12 @@ Uncontrolled Components:
 # V62- No more forwardRef in React 19
 
 * forwardRef - Allows parent component to move down refs to their children. It gives a child component a reference to DOM entity created by its parent component in React.  This helps the child to read and modify the element form any location where it is used.
-                    < React.forwardRef ((props, ref) => { })>
+                Syntax: <React.forwardRef ((props, ref) => { })>
 
 # V63: useId Hook in React:
 useId is a React Hook for generating unique Id's that cane be passed to accessibility attributes.
+              Syntax: <const id = useId()>
+
+# V64: prop Drilling in React Js:
+* Props drilling is a pattern in React where you pass data from a parent component to deeply nested child components through multiple layers of components, even if some of the intermediate components don't need the data.
+* As your component tree deepens, prop drilling can make the code more complex and harder to maintain.
