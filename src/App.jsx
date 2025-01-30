@@ -9,7 +9,9 @@
 // import  "./components/EV.css";
 // import { LiftingState } from "./components/LiftStateUp";
 
-import { UseId } from "./components/hooks/useId/index";
+import { ParentComponent } from "./components/PropDriling"
+
+// import { UseId } from "./components/hooks/useId/index";
 
 // import { ForwardRef } from "./components/hooks/useRefs/forwardRef"
 
@@ -68,10 +70,12 @@ export const App = () => {
       {/* < WayToFetchApi /> */}
       {/* < UseRef /> */}
       {/* < ForwardRef /> */}
-      < UseId />
+      {/* < UseId /> */}
+      < ParentComponent />
 
       {/* <Footer /> */}
     </section>
   )
 }
+
 

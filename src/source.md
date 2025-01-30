@@ -308,3 +308,7 @@ useId is a React Hook for generating unique Id's that cane be passed to accessib
 # V64: prop Drilling in React Js:
 * Props drilling is a pattern in React where you pass data from a parent component to deeply nested child components through multiple layers of components, even if some of the intermediate components don't need the data.
 * As your component tree deepens, prop drilling can make the code more complex and harder to maintain.
+
+    App --> Counter --> Child --> GrandChild --> GrandGrandChild
+Now, we need Counter value in GrandGrandChild, just passing from Counter to GrandGrandChild is not possible.
+To fix this problem we have Context API in React Js.
