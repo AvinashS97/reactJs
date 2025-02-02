@@ -11,4 +11,4 @@ export const Practices = () => {
       <p>Number of Students: {students.length}</p>
     </>
   )
-}
+};
