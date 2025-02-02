@@ -1,4 +1,4 @@
-import { useId } from "react"
+import { useId } from "react";
 
 export const UseId = () => {
     
@@ -25,7 +25,5 @@ export const UseId = () => {
             </div>
             <button type="submit">Submit</button>
         </form>
-    )
-}
-
-// 04:03
+    );
+};
