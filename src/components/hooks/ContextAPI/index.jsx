@@ -11,6 +11,6 @@ export const BioProvider = () => {
     return <BioContext.Provider value={myName}>
 
     </BioContext.Provider>
-}
+};
 
 // 08:00

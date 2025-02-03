@@ -1,6 +1,7 @@
 // import NetflixSeries, {Footer, Header} from "./components/NetflixSeries";
 // import NetflixSeries from "./components/NetflixSeries";
-// import "./components/Netflix.css"
+// import "./components/Netflix.css";
+import "./index.css";
 // import "./components/Netflix.module.css";
 // import { EventHandling } from "./components/EventHandling";
 // import { EventProps } from "./components/EventProps";
