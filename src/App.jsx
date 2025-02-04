@@ -11,17 +11,17 @@ import "./index.css";
 // import { LiftingState } from "./components/LiftStateUp";
 
 // import { ParentComponent } from "./components/PropDriling";
-import { BioProvider } from "./components/hooks/ContextAPI";
-import { Home } from "./components/hooks/ContextAPI/Home";
-import { About } from "./components/hooks/ContextAPI/About";
+import { BioProvider } from "./hooks/ContextAPI";
+import { Home } from "./hooks/ContextAPI/Home";
+import { About } from "./hooks/ContextAPI/About";
 
-// import { UseId } from "./components/hooks/useId/index";
+// import { UseId } from "./hooks/useId/index";
 
-// import { ForwardRef } from "./components/hooks/useRefs/forwardRef"
-// import { UseRef } from "./components/hooks/useRefs/index";
+// import { ForwardRef } from "./hooks/useRefs/forwardRef"
+// import { UseRef } from "./hooks/useRefs/index";
 
-// import { State } from "./components/hooks/State";
-// import ShortCircuitExample from "./components/hooks/ShortCircuit";
+// import { State } from "./hooks/State";
+// import ShortCircuitExample from "./hooks/ShortCircuit";
 
 // import { Counter } from "./components/hooks/useState";
 // import CounterChallenge from './components/hooks/useState/Challenge';
