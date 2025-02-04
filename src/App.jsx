@@ -1,7 +1,7 @@
+import "./index.css";
 // import NetflixSeries, {Footer, Header} from "./components/NetflixSeries";
 // import NetflixSeries from "./components/NetflixSeries";
 // import "./components/Netflix.css";
-import "./index.css";
 // import "./components/Netflix.module.css";
 // import { EventHandling } from "./components/EventHandling";
 // import { EventProps } from "./components/EventProps";
@@ -10,12 +10,13 @@ import "./index.css";
 // import  "./components/EV.css";
 // import { LiftingState } from "./components/LiftStateUp";
 
-import { ParentComponent } from "./components/PropDriling"
+// import { ParentComponent } from "./components/PropDriling";
+import { BioProvider } from "./components/hooks/ContextAPI";
+import { Home } from "./components/hooks/ContextAPI/Home";
 
 // import { UseId } from "./components/hooks/useId/index";
 
 // import { ForwardRef } from "./components/hooks/useRefs/forwardRef"
-
 // import { UseRef } from "./components/hooks/useRefs/index";
 
 // import { State } from "./components/hooks/State";
@@ -72,7 +73,11 @@ export const App = () => {
       {/* < UseRef /> */}
       {/* < ForwardRef /> */}
       {/* < UseId /> */}
-      < ParentComponent />
+      {/* < ParentComponent /> */}
+
+      <BioProvider >
+        <Home />
+      </BioProvider>
 
       {/* <Footer /> */}
     </section>

@@ -7,7 +7,7 @@ export const BioContext = createContext ();
 //2nd Step
 
 export const BioProvider = () => {
-    const myName = "Avinash"
+    const myName = "Avinash";
     return <BioContext.Provider value={myName}>
 
     </BioContext.Provider>
