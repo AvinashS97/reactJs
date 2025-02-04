@@ -13,6 +13,7 @@ import "./index.css";
 // import { ParentComponent } from "./components/PropDriling";
 import { BioProvider } from "./components/hooks/ContextAPI";
 import { Home } from "./components/hooks/ContextAPI/Home";
+import { About } from "./components/hooks/ContextAPI/About";
 
 // import { UseId } from "./components/hooks/useId/index";
 
@@ -77,6 +78,7 @@ export const App = () => {
 
       <BioProvider >
         <Home />
+        <About />
       </BioProvider>
 
       {/* <Footer /> */}
