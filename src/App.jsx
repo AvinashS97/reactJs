@@ -14,6 +14,7 @@ import "./index.css";
 import { BioProvider } from "./hooks/ContextAPI";
 import { Home } from "./hooks/ContextAPI/Home";
 import { About } from "./hooks/ContextAPI/About";
+import { Services } from "./hooks/ContextAPI/Services";
 
 // import { UseId } from "./hooks/useId/index";
 
@@ -80,10 +81,12 @@ export const App = () => {
         <Home />
         <About />
       </BioProvider>
+        <Services />
 
       {/* <Footer /> */}
     </section>
   )
 }
 
+// 04:10
 
