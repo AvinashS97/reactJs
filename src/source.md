@@ -324,3 +324,7 @@ To fix this problem we have Context API in React Js.
   Context Creation: createContext returns a Context component, not a variable. The first letter of the Context component's name must be uppercase.
   * Provider Component: The Provider is a property of the Context component. We pass the value to the Provider. which makes it accessible to child components. The value should be passed inside double curly braces {{ }} if it's more than one.
   * Consuming Context Data: To access the context data, we use the useContext hook. As a parameter, we pass the entire context to useContext to access all values provided by the Provider.
+
+# V65: The mistake and solutions in Context API.
+ 
+//* In the Context API, the data provided by a context can only be accessed by the components that are its children within the component TreeWalker. This means that any component that needs access to the context data must be a desendant of the provider component that supplies the context Value.

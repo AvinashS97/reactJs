@@ -80,13 +80,12 @@ export const App = () => {
       <BioProvider >
         <Home />
         <About />
-      </BioProvider>
         <Services />
+      </BioProvider>
 
       {/* <Footer /> */}
     </section>
   )
 }
 
-// 04:10
 
