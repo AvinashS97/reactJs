@@ -1,8 +1,8 @@
-import { useContext } from 'react';
-import { BioContext } from '.';
+
+import { useBioContext } from '.';
 
 export const About = () => {
-  const { myName, myAge } = useContext(BioContext);
+  const { myName, myAge } = useBioContext();
 
   return (
     <section
