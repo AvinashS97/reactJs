@@ -333,4 +333,10 @@ To fix this problem we have Context API in React Js.
     Creating custom hook in React is a powerful way to encapsulate logic
   1. Prefix with use: Custom hook must start with the word 'use'.
   2. use Built-in Hooks: Custom hooks should utilize React's built-in hooks(eg., useState, useEffect, useContext) to leverage React's state and lifecycle features.
-  3. Avoid Side Effect Outside Hooks:
+  3. Avoid Side Effect Outside Hooks: Side effects(eg., data fetching, subscriptions) should be managed within hooks using useEffect or other appropriate hooks.
+  4. Keep Hooks Pure: Hooks should be free from side effects and return values or function that the component can use.
+
+# V67: New "use" hooks in React:
+* use can be called inside conditionals like if and loops like for. use is preferred over useContext because it is more flexible.
+
+<!-- 03:30 -->
