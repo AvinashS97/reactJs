@@ -1,5 +1,7 @@
 // V64.1: Context API & useContext Hook in ReactJs.
-import { createContext, useContext } from "react";
+
+// import { createContext, useContext } from "react";
+import { createContext, use } from "react";
 
 // 1 Step
 export const BioContext = createContext();
@@ -18,7 +20,7 @@ export const BioProvider = ({ children }) => {
 
 // Custom Hooks
 export const useBioContext = () => {
-    const context = useContext(BioContext);
+    const context = use(BioContext);
     if(context === undefined){
         throw new Error("Component must be wrapped with BioProvider.")
     }
