@@ -338,5 +338,3 @@ To fix this problem we have Context API in React Js.
 
 # V67: New "use" hooks in React:
 * use can be called inside conditionals like if and loops like for. use is preferred over useContext because it is more flexible.
-
-<!-- 03:30 -->

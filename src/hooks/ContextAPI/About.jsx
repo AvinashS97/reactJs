@@ -1,12 +1,20 @@
 
 // import { BioContext, useBioContext } from '.';
-import { useContext } from 'react';
+import { use } from 'react';
 import { BioContext } from '.';
 
 export const About = () => {
   // const { myName, myAge } = useBioContext();
-  
-  const { myName, myAge } = useContext(BioContext);
+
+  // const { myName, myAge } = use(BioContext);
+
+  //* use can be called inside conditionals like if and loops like for. 
+
+  const newHook = true;
+  let myName, myAge;
+  if (newHook) {
+    ({ myName, myAge } = use(BioContext));
+  }
 
 
   return (
