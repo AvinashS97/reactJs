@@ -11,10 +11,14 @@ import "./index.css";
 // import { LiftingState } from "./components/LiftStateUp";
 
 // import { ParentComponent } from "./components/PropDriling";
-import { BioProvider } from "./hooks/ContextAPI";
-import { Home } from "./hooks/ContextAPI/Home";
-import { About } from "./hooks/ContextAPI/About";
-import { Services } from "./hooks/ContextAPI/Services";
+
+// import { BioProvider } from "./hooks/ContextAPI";
+// import { Home } from "./hooks/ContextAPI/Home";
+// import { About } from "./hooks/ContextAPI/About";
+// import { Services } from "./hooks/ContextAPI/Services";
+
+import { DarkLight } from "./hooks/ContextAPI/DarkLight";
+import { ThemeProvider } from "styled-components";
 
 // import { UseId } from "./hooks/useId/index";
 
@@ -77,11 +81,16 @@ export const App = () => {
       {/* < UseId /> */}
       {/* < ParentComponent /> */}
 
-      <BioProvider >
+
+      {/* <BioProvider >
         <Home />
         <About />
         <Services />
-      </BioProvider>
+      </BioProvider> */}
+
+      <ThemeProvider>
+        < DarkLight/>
+      </ThemeProvider>
 
       {/* <Footer /> */}
     </section>
