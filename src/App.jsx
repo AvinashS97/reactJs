@@ -17,8 +17,9 @@ import "./index.css";
 // import { About } from "./hooks/ContextAPI/About";
 // import { Services } from "./hooks/ContextAPI/Services";
 
-import { DarkLight } from "./hooks/ContextAPI/DarkLight";
-import { ThemeProvider } from "styled-components";
+// import { DarkLight, ThemeProvider } from "./hooks/ContextAPI/DarkLight";
+
+import CounterReducer from "./hooks/useReducer/index";
 
 // import { UseId } from "./hooks/useId/index";
 
@@ -88,9 +89,11 @@ export const App = () => {
         <Services />
       </BioProvider> */}
 
-      <ThemeProvider>
-        < DarkLight/>
-      </ThemeProvider>
+      {/* <ThemeProvider>
+        <DarkLight />
+      </ThemeProvider> */}
+
+      < CounterReducer />
 
       {/* <Footer /> */}
     </section>

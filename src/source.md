@@ -365,3 +365,11 @@ Adjust the background color, text color, and button lebel according to the curre
 
 ## Toggle the Theme:
 Attach the toggleTheme function to a button's onClick event. This allows the user to switch between light and dark modes by clicking the button.
+
+# V69: useReducer Hook in React:
+* Syntax:  <const [state, dispatch] = useReducer (reducer, initialState);> 
+
+It returns an Array with exactly two values: containing the current state and a dispatch function.
+* Initial State: During the first render, it’s set to init(initialArg) or initialArg. The initial state value. (The initial state can be a simple value, an object, or even derived from a function if the initialization is complex.)
+* Dispatch Function: is used to send actions to the reducer, which in turn updates the state based on the action's type and any associated data (payload). It do noot have a return values.
+* Reducer Function: A function that takes the current state and an action as arguments, and returns a new state.
