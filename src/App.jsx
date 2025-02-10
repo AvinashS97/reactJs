@@ -21,6 +21,7 @@ import "./index.css";
 
 import CounterReducer from "./hooks/useReducer/index";
 
+
 // import { UseId } from "./hooks/useId/index";
 
 // import { ForwardRef } from "./hooks/useRefs/forwardRef"
@@ -94,6 +95,7 @@ export const App = () => {
       </ThemeProvider> */}
 
       < CounterReducer />
+      
 
       {/* <Footer /> */}
     </section>
