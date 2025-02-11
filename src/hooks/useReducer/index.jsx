@@ -2,20 +2,26 @@ import { useReducer } from 'react';
 import './Reducer.css'; // Import CSS file
 
 const reducer = (state, action) => {
-    if (action.type === 'increment') {
-        return { count: state.count + 1 };
-    } else if (action.type === 'decrement') {
-        return { count: state.count - 1 };
-    } else if (action.type === 'reset') {
-        return { count: 0 };
-    } else {
-        return state;
-    }
+    switch (action.type) {
+        case 'increment':
+            return { ...state, count: state.count + 1 };
+        case 'decrement':
+            return { ...state, count: state.count - 1 };
+        case 'reset':
+            return { ...state, count: 0 };
+        default:
+            return state;
+    };
 };
 
+const initialState = {
+    count : 0,
+    inc : 2,
+    dec : 2,
+};
 
 const CounterReducer = () => {
-    const [state, dispatch] = useReducer(reducer, { count: 0 });
+    const [state, dispatch] = useReducer(reducer, initialState);
 
     return (
         <div className="justify-center items-center p-4 w-screen h-screen">
