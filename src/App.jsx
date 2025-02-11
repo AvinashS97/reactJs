@@ -94,7 +94,6 @@ export const App = () => {
       </ThemeProvider> */}
 
       < CounterReducer />
-      
 
       {/* <Footer /> */}
     </section>
