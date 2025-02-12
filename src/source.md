@@ -373,3 +373,10 @@ It returns an Array with exactly two values: containing the current state and a 
 * Initial State: During the first render, it’s set to init(initialArg) or initialArg. The initial state value. (The initial state can be a simple value, an object, or even derived from a function if the initialization is complex.)
 * Dispatch Function: is used to send actions to the reducer, which in turn updates the state based on the action's type and any associated data (payload). It do not have a return values.
 * Reducer Function: A function that takes the current state and an action as arguments, and return a new state.
+
+# V71: Memo() in React 19:
+
+  * The React.momo function is used for memoization of functional components.
+  * If the props of a memoized component have not changed, React skips the rendering for that component, using the cached result instead.
+  * Do memoizations only when necessary. 
+  OR React.momo() is a higher-order component that we can use to wrap components that we do not want to re-render unless props within them changes.

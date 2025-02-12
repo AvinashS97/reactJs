@@ -1,3 +1,5 @@
+//* V69: useReducer Hook in ReactJs
+//* V70: Improved useReducer
 import { useReducer } from 'react';
 import './Reducer.css'; // Import CSS file
 
