@@ -1,3 +1,4 @@
+//* V71 React.memo()
 import { memo } from 'react';
 import { useRef } from 'react';
 

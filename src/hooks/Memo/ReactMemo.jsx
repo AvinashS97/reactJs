@@ -1,3 +1,5 @@
+//* V71: React.momo()
+
 import { useState } from "react"
 // import  Counts  from "./MemoCount";
 import { Counts } from "./MemoCount";
@@ -13,7 +15,7 @@ export const ReactMemo = () => {
             </button>
         </div>
         <Counts /> 
-        {/* ye re-render hoga jbki iske re-render hone ki jarurat nhi h ... ISSI SE BACHNE KE LIE, WE USE MEMO().*/}
+        {/* ye re-render hoga jbki iske re-render hone ki jarurat nhi h ... To prevent this, WE USE MEMO().*/}
         </>
     )
 };
