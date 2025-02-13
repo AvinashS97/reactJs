@@ -1,4 +1,5 @@
 import { useState } from "react"
+// import  Counts  from "./MemoCount";
 import { Counts } from "./MemoCount";
 
 export const ReactMemo = () => {
@@ -11,8 +12,8 @@ export const ReactMemo = () => {
                 Increment
             </button>
         </div>
-        
-        <Counts /> {/* ye re-render hoga jbki iske re-render hone ki jarurat nhi h ... ISSI SE BACHNE KE LIE, WE USE MEMO().*/}
+        <Counts /> 
+        {/* ye re-render hoga jbki iske re-render hone ki jarurat nhi h ... ISSI SE BACHNE KE LIE, WE USE MEMO().*/}
         </>
     )
-}
+};
