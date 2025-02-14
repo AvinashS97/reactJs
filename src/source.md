@@ -378,5 +378,6 @@ It returns an Array with exactly two values: containing the current state and a 
 
   * The React.momo function is used for memoization of functional components.
   * If the props of a memoized component have not changed, React skips the rendering for that component, using the cached result instead.
-  * Do memoizations only when necessary. 
+  * Do memoizations only when necessary.
+   
   OR React.momo() is a higher-order component that we can use to wrap components that we do not want to re-render unless props within them changes.
