@@ -13,8 +13,8 @@ export const ThemeProvider = ({ children }) => {
     <ThemeContext.Provider value={{ theme, handleToggleTheme }}>
       {children}
     </ThemeContext.Provider>
-  )
-}
+  );
+};
 
 // creating a component
 

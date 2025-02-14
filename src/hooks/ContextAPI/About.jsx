@@ -14,7 +14,7 @@ export const About = () => {
   let myName, myAge;
   if (newHook) {
     ({ myName, myAge } = use(BioContext));
-  }
+  };
 
 
   return (
