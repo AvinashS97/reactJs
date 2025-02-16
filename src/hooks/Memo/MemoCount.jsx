@@ -17,4 +17,4 @@ export const Counts = memo(() => {
   );
 });
 
-// ESLint: Enable--> Thst's why getting this red underline.
+// ESLint: Enable--> That's why getting this red underline.

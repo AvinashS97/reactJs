@@ -1,5 +1,4 @@
-import { useState } from "react";
-
+import { useMemo, useState } from "react";
 
 const ExpensiveComponent = () => {
     const sum = () => {
@@ -10,8 +9,10 @@ const ExpensiveComponent = () => {
         }
         return i;
     };
+    const total = useMemo(() => sum(), [])
 
-    const total = sum();
+    // const total = sum();
+
     return <p> sum: {total} </p>
 };
 
@@ -19,7 +20,7 @@ const MemoParentComponent = () => {
     const [count, setCount] = useState(0);
 
     return (
-        <div className="flex flex-col justify-center items-center bg-black p-4 h-lvh font-display text-white tracking-wider">
+        <div className="flex flex-col justify-center items-center bg-black p-4 w-lvw h-lvh font-display text-white tracking-wider">
             <ExpensiveComponent />
             <button onClick={()=> setCount(count +1)} className="bg-cyan-400 px-3 py-6 rounded-sm">
                 Re-Render Parent
