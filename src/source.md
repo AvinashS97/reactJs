@@ -377,7 +377,7 @@ It returns an Array with exactly two values: containing the current state and a 
 # V71: Memo() in React 19:
 
   * The React.momo function is used for memoization of functional components.
-  * If the props of a memoized component have not changed, React skips the rendering for that component, using the cached result instead.
+  * * * If the props of a memoized component have not changed, React skips the rendering for that component, using the cached result instead.
   * Do memoizations only when necessary.
    
   OR React.momo() is a higher-order component that we can use to wrap components that we do not want to re-render unless props within them changes.
@@ -392,3 +392,7 @@ It returns an Array with exactly two values: containing the current state and a 
   * Use it when you want to prevent unnecessary re-execution of a function on every render.
   * Useful for optimizing performance in situations where calculations or operations are computationally expensive.
   * Overusing useMemo might lead to unnecessary complexity and impact readability.
+
+# V73: React.memo Vs useMemo: 
+
+<!-- 05:36 -->
