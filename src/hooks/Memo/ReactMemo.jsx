@@ -1,16 +1,18 @@
 //* V71: React.momo()
 
-import { useState } from "react";
+import { useMemo, useState } from "react";
 // import  Counts  from "./MemoCount";
 import { Counts } from "./MemoCount";
 
 export const ReactMemo = () => {
     const [count, setCount] = useState(0);
 
-    const myBioData = {
-        name: "Avinash",
-        age: 22,
-    }
+    const myBioData = useMemo (()=> {
+        return {
+            name: "Avinash",
+            age: 22,
+        };
+    },[]);
 
     return (
         <>
