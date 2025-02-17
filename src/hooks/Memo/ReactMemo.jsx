@@ -7,6 +7,7 @@ import { Counts } from "./MemoCount";
 export const ReactMemo = () => {
     const [count, setCount] = useState(0);
 
+    //  Prevent re-render by caching the optimized value either object or expensive calculations.
     const myBioData = useMemo (()=> {
         return {
             name: "Avinash",
