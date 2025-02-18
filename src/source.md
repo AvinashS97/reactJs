@@ -394,5 +394,7 @@ It returns an Array with exactly two values: containing the current state and a 
   * Overusing useMemo might lead to unnecessary complexity and impact readability.
 
 # V73: React.memo Vs useMemo: 
+  * useMemo optimize the values in functions. While useCallback used for optimizing functions.
 
-<!-- 05:36 -->
+# V74: useCallback Hook in React:
+  * useCallback and useMemo both are hooks that can be used to optimize application by memoizing values or functions. 

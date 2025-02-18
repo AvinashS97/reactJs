@@ -20,8 +20,9 @@ import "./index.css";
 
 // import CounterReducer from "./hooks/useReducer/index";
 
-import { ReactMemo } from "./hooks/Memo/ReactMemo";
+// import { ReactMemo } from "./hooks/Memo/ReactMemo";
 // import MemoParentComponent from "./hooks/Memo/useMemo";
+import UseCallback from "./hooks/Memo/UseCallback";
 
 // import { UseId } from "./hooks/useId/index";
 
@@ -98,8 +99,9 @@ export const App = () => {
 
       {/* < CounterReducer /> */}
 
-      <ReactMemo/>
+      {/* <ReactMemo/> */}
       {/* < MemoParentComponent /> */}
+      < UseCallback />
 
       {/* <Footer /> */}
     </section>
