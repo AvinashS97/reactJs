@@ -1,4 +1,4 @@
-import { memo, useState } from "react";
+import { memo, useCallback, useState } from "react";
 
 const Button = memo(({ onClick, children}) => {
     console.log(`Rendering button: ${children}`);
@@ -14,10 +14,14 @@ export default function UseCallback() {
     const [count, setCount] = useState(0);
 
     //  Memoize the increment function
-    const increment = () => {
+    // const increment = () => {
+        
+    // }
+
+    const increment = useCallback(()=> {
         console.log("increment inside");
         setCount((prevCount) => prevCount +1);
-    }
+    })
 
     //  Memoize the decrement function
     const decrement = () => {
