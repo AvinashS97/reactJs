@@ -26,7 +26,7 @@ import UseCallback from "./hooks/Memo/UseCallback";
 
 // import { UseId } from "./hooks/useId/index";
 
-// import { ForwardRef } from "./hooks/useRefs/forwardRef"
+// import { ForwardRef } from "./hooks/useRefs/forwardRef";
 // import { UseRef } from "./hooks/useRefs/index";
 
 // import { State } from "./hooks/State";
