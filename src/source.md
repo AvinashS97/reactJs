@@ -383,6 +383,7 @@ It returns an Array with exactly two values: containing the current state and a 
   OR React.momo() is a higher-order component that we can use to wrap components that we do not want to re-render unless props within them changes.
 
 # V72: useMemo Hook:
+
       const memoizedValue = useMemo( {} => { // Your computation logic here
         return computedValue;
       }, {dependencies});
