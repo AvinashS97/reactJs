@@ -9,7 +9,7 @@ const ExpensiveComponent = () => {
         }
         return i;
     };
-    const total = useMemo(() => sum(), [])
+    const total = useMemo(() => sum(), []);
 
     // const total = sum();
 
@@ -27,7 +27,7 @@ const MemoParentComponent = () => {
             </button>
             <p>Parent re-renders: {count} </p>
         </div>
-    )
-}
+    );
+};
 
 export default MemoParentComponent;

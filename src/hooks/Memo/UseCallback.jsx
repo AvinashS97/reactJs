@@ -21,13 +21,13 @@ export default function UseCallback() {
     const increment = useCallback(()=> {
         console.log("increment inside");
         setCount((prevCount) => prevCount +1);
-    })
+    });
 
     //  Memoize the decrement function
     const decrement = () => {
         console.log("decrement inside");
         setCount((prevCount) => prevCount -1);
-    }
+    };
 
     return (
         <div className="flex flex-col justify-center items-center bg-black p-4 h-lvh font-display text-white tracking-wider">
@@ -35,7 +35,7 @@ export default function UseCallback() {
             <Button onClick={increment}>Increment</Button>
             <Button onClick={decrement}>Decrement</Button>
         </div>
-    )
-}
+    );
+};
 
 // 08:39 
