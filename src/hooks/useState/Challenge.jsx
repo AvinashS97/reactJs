@@ -9,8 +9,8 @@
 
 //? Step Increment: Add an input field to allow users to set the step value by which the counter shouldincrement or decrement.
 
-import { useState } from 'react'
-import '../Hooks.css'
+import { useState } from 'react';
+import '../Hooks.css';
 
 const CounterChallenge = () => {
 
