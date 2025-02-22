@@ -10,5 +10,5 @@ export const Home = () => {
     >
         <h1> Hello Context API my name is {myName}. I am {myAge} years old. </h1>
     </section>
-    )
+    );
 };
