@@ -29,7 +29,7 @@ export default function UseCallback() {
     //     console.log("decrement inside");
     //     setCount((prevCount) => prevCount -1);
     // };
-
+ 
     const decrement = useCallback(()=> {
         console.log("decrement inside");
         setCount((prevCount) => prevCount - 1);
