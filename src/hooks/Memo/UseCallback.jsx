@@ -13,24 +13,30 @@ const Button = memo(({ onClick, children}) => {
 export default function UseCallback() {
     const [count, setCount] = useState(0);
 
-    //  Memoize the increment function
+//  Memoize the increment function
     // const increment = () => {
         
     // }
 
     const increment = useCallback(()=> {
         console.log("increment inside");
-        setCount((prevCount) => prevCount +1);
-    });
+        setCount((prevCount) => prevCount + 1);
+    },[]);
+    
+//  Memoize the decrement function:
 
-    //  Memoize the decrement function
-    const decrement = () => {
+    // const decrement = () => {
+    //     console.log("decrement inside");
+    //     setCount((prevCount) => prevCount -1);
+    // };
+
+    const decrement = useCallback(()=> {
         console.log("decrement inside");
-        setCount((prevCount) => prevCount -1);
-    };
+        setCount((prevCount) => prevCount - 1);
+    },[]);
 
     return (
-        <div className="flex flex-col justify-center items-center bg-black p-4 h-lvh font-display text-white tracking-wider">
+        <div className="flex flex-col justify-center items-center bg-black p-4 w-lvw h-lvh font-display text-white tracking-wider">
             <h1 className="mb-4">Count: {count} </h1>
             <Button onClick={increment}>Increment</Button>
             <Button onClick={decrement}>Decrement</Button>
