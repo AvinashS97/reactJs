@@ -400,4 +400,7 @@ It returns an Array with exactly two values: containing the current state and a 
 # V74: useCallback Hook in React:
   * useCallback and useMemo both are hooks that can be used to optimize application by memoizing values or functions. 
 
-# V75: React Router is a popular JavaScript framework used for handling routing in React applications.
+# V75: React Router:
+  * React Router is a popular JavaScript framework used for handling routing in React applications.
+
+<!-- 10:02 -->
