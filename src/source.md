@@ -403,4 +403,8 @@ It returns an Array with exactly two values: containing the current state and a 
 # V75: React Router:
   * React Router is a popular JavaScript framework used for handling routing in React applications.
 
-<!-- 10:02 -->
+# V76: React Router- createRoutesFromElements:
+  * createRoutesFromElements is a helper that creates route objects form <Route> elements. It's useful if you prefer to create your routes as JSX instead of objects.
+
+# V78: APPLAYOUT in React:
+  * Outlet in React Router: An <Outlte> should be used in parent route elements to render their child route elements. This allows nested UI to show up when child routes are rendered. If the parent route matched exactly, it will render a child index route or nothing if there is no index route.
