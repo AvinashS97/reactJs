@@ -40,7 +40,7 @@ export const Header = () => {
             </div>
         </header>
     </>
-    )
+    );
 };
 
 // 06:41

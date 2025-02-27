@@ -9,7 +9,7 @@ const AppLayout = () => {
         <Outlet />
         <Footer />
       </>
-    )
+    );
 };
 
 export default AppLayout;
