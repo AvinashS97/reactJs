@@ -407,6 +407,6 @@ It returns an Array with exactly two values: containing the current state and a 
   * createRoutesFromElements is a helper that creates route objects form <Route> elements. It's useful if you prefer to create your routes as JSX instead of objects.
 
 # V77: APPLAYOUT in React:
-  * Outlet in React Router: An <Outlte> should be used in parent route elements to render their child route elements. This allows nested UI to show up when child routes are rendered. If the parent route matched exactly, it will render a child index route or nothing if there is no index route.
+  * Outlet in React Router: An <Outlet> should be used in parent route elements to render their child route elements. This allows nested UI to show up when child routes are rendered. If the parent route matched exactly, it will render a child index route or nothing if there is no index route.
 
 # V77.1: NAVIGATION BAR in React:
