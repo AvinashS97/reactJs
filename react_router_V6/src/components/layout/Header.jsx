@@ -1,47 +1,76 @@
+import { NavLink } from "react-router-dom";
+
 export const Header = () => {
+  const getNavLinkStyle = ({ isActive }) => {
+    return {
+      color: isActive ? "green" : "black",
+    };
+  };
+
   return (
     <>
-      <header className='section-navbar'>
-        <section className='top_txt'>
-          <div className='head container'>
-            <div className='head_txt'>
-              <p>Get Thapa Membership, 30-day return or refund gurantee.</p>
+      <header className="section-navbar">
+        <section className="top_txt">
+          <div className="head container">
+            <div className="head_txt">
+              <p>Get Thapa Membership, 30-day return or refund guarantee.</p>
             </div>
-            <div className='sign_in_up'>
-              <a href='#'>SIGN IN</a>
-              <a href='#'>SIGN UP</a>
+            <div className="sing_in_up">
+              <NavLink to="# ">SIGN IN</NavLink>
+              <NavLink to="# ">SIGN UP</NavLink>
             </div>
           </div>
         </section>
 
-        <div className='container'>
-          <div className='navbar-brand'>
-            <a href='index'>
+        <div className="container">
+          <div className="navbar-brand">
+            <NavLink to="index">
               <p>ThapaFlix</p>
-            </a>
+            </NavLink>
           </div>
 
-          <nav className='navbar'>
+          <nav className="navbar">
             <ul>
-              <li className='nav-item'>
-                <a href='/' className='nav-link'>
+              <li className="nav-item">
+                <NavLink
+                  to="/"
+                  className={({ isActive }) =>
+                    isActive ? "nav-link active" : "nav-link"
+                  }
+                >
                   Home
-                </a>
+                </NavLink>
               </li>
-              <li className='nav-item'>
-                <a href='/about' className='nav-link'>
-                  About
-                </a>
+              <li className="nav-item">
+                <NavLink
+                  to="/about"
+                  style={({ isActive }) => {
+                    return {
+                      color: isActive ? "blue" : "black",
+                    };
+                  }}
+                >
+                  about
+                </NavLink>
               </li>
-              <li className='nav-item'>
-                <a href='movie' className='nav-link'>
-                  Movies
-                </a>
+              <li className="nav-item">
+                <NavLink
+                  to="movies"
+                  className="nav-link"
+                  style={getNavLinkStyle}
+                >
+                  movies
+                </NavLink>
               </li>
-              <li className='nav-item'>
-                <a href='contact' className='nav-link'>
-                  Contact
-                </a>
+              <li className="nav-item">
+                <NavLink
+                  to="contact"
+                  className={({ isActive }) =>
+                    isActive ? "nav-link active" : "nav-link"
+                  }
+                >
+                  contact
+                </NavLink>
               </li>
             </ul>
           </nav>
@@ -50,5 +79,3 @@ export const Header = () => {
     </>
   );
 };
-
-// 06:41
