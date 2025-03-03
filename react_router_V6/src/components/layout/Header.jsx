@@ -1,11 +1,12 @@
-import { NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom';
 
 export const Header = () => {
+
   const getNavLinkStyle = ({ isActive }) => {
     return {
       color: isActive ? 'green' : 'black'
-    }
-  }
+    };
+  };
 
   return (
     <>
@@ -41,6 +42,7 @@ export const Header = () => {
                   Home
                 </NavLink>
               </li>
+
               <li className='nav-item'>
                 <NavLink
                   to='/about'
@@ -53,6 +55,7 @@ export const Header = () => {
                   about
                 </NavLink>
               </li>
+
               <li className='nav-item'>
                 <NavLink
                   to='movies'
@@ -62,6 +65,7 @@ export const Header = () => {
                   movies
                 </NavLink>
               </li>
+
               <li className='nav-item'>
                 <NavLink
                   to='contact'
