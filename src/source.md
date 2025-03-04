@@ -413,4 +413,4 @@ It returns an Array with exactly two values: containing the current state and a 
     * <NavLink> is a special kind of <Link> that knows whether or not it is "active", "pending", or "transitioning". This is useful in a few different scenarios.
 
 # V80: errorElement: 
-    * When exception are thrown in loaders, actions, or component rendering, instead of the normal render path your Routes ( <Route element>), the error path will be rendered ( <Route errorElement>) and the error made available with useRouteError.
+    * When exception are thrown in loaders(iske through Data fetch hota hai), actions (), or component rendering, instead of the normal render path your Routes ( <Route element>), the error path will be rendered ( <Route errorElement>) and the error made available with useRouteError.
