@@ -410,7 +410,11 @@ It returns an Array with exactly two values: containing the current state and a 
   * Outlet in React Router: An <Outlet> should be used in parent route elements to render their child route elements. This allows nested UI to show up when child routes are rendered. If the parent route matched exactly, it will render a child index route or nothing if there is no index route.
 
 # V77.1: NAVIGATION BAR in React:
-    * <NavLink> is a special kind of <Link> that knows whether or not it is "active", "pending", or "transitioning". This is useful in a few different scenarios.
+  * <NavLink> is a special kind of <Link> that knows whether or not it is "active", "pending", or "transitioning". This is useful in a few different scenarios.
 
-# V80: errorElement: 
-    * When exception are thrown in loaders(iske through Data fetch hota hai), actions (), or component rendering, instead of the normal render path your Routes ( <Route element>), the error path will be rendered ( <Route errorElement>) and the error made available with useRouteError.
+# V80: errorElement:
+  * When exception are thrown in loaders(iske through Data fetch hota hai), actions (), or component rendering, instead of the normal render path your Routes ( <Route element>), the error path will be rendered ( <Route errorElement>) and the error made available with useRouteError.
+
+    * useRouterError() is used in error elements to retrieve errors thrown during navigation or data loading.
+
+    * useNavigate()
