@@ -7,6 +7,7 @@ import { Movie } from './pages/Movies';
 import { Contact } from './pages/Contact';
 import AppLayout from './components/layout/AppLayout';
 import { ErrorPage } from './pages/ErrorPage';
+// import { NotFound } from './pages/NotFound';
 const App = () => {
 
   const router = createBrowserRouter([
@@ -31,6 +32,11 @@ const App = () => {
           path:"/contact",
           element: <Contact />,
         },
+
+        // {
+        //   path : "*",
+        //   element: <NotFound />
+        // }
       ]
     },
   ]);
