@@ -21,8 +21,8 @@ export const ErrorPage = () => {
                     <p>Go back to Home Page</p>
                 </NavLink>
             </section>
-        )
-    } 
+        );
+    };
     console.log(error);
     
     
