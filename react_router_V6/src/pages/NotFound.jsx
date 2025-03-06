@@ -25,7 +25,6 @@ export const NotFound = () => {
     } 
     console.log(error);
     
-    
     return <h1> The page you are looking does not exist</h1>
      
 }
