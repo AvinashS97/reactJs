@@ -417,4 +417,4 @@ It returns an Array with exactly two values: containing the current state and a 
 
     * useRouterError() Hook: is used in error elements to retrieve errors thrown during navigation or data loading.
 
-    * useNavigate() Hook: 
+    * useNavigate() Hook: The useNavigate hook returns a function that lets you navigate programmatically.
