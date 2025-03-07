@@ -415,6 +415,6 @@ It returns an Array with exactly two values: containing the current state and a 
 # V80: errorElement:
   * When exception are thrown in loaders(iske through Data fetch hota hai), actions (), or component rendering, instead of the normal render path your Routes ( <Route element>), the error path will be rendered ( <Route errorElement>) and the error made available with useRouteError.
 
-    * useRouterError() is used in error elements to retrieve errors thrown during navigation or data loading.
+    * useRouterError() Hook: is used in error elements to retrieve errors thrown during navigation or data loading.
 
-    * useNavigate()
+    * useNavigate() Hook: 
