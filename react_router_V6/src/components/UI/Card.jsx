@@ -1,3 +1,5 @@
+import "./Card.css";
+
 /* eslint-disable react/prop-types */
 export const Card = ({curMovie}) => {
     const { Poster, imdbID } = curMovie;
