@@ -418,3 +418,9 @@ It returns an Array with exactly two values: containing the current state and a 
     * useRouterError() Hook: is used in error elements to retrieve errors thrown during navigation or data loading.
 
     * useNavigate() Hook: The useNavigate hook returns a function that lets you navigate programmatically.
+    
+    * useNavigation Hook: This hook tells you everything you need to know about a page navigation to build pending navigation indicators and optimistic UI on data mutations. Things like:
+      * Global loading indicators
+      * Disabling forms while a mutation is happening
+      * Adding busy indicators to submit buttons
+      * Optimistically showing the new state of a record while it's being updated
