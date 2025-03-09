@@ -9,12 +9,10 @@ export const Movie = () => {
     <>
       <ul className='grid grid-four--cols container'>
         {moviesData &&
-          moviesData.Search.map(curMovie => {
+          moviesData.Search.map((curMovie) => {
             return <Card key={curMovie.imdbID} curMovie={curMovie} />
           })}
       </ul>
     </>
   );
 };
-
-// 12:50
