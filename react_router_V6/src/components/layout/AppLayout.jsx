@@ -6,7 +6,7 @@ import { Loading } from './Loading';
 const AppLayout = () => {
 
   const navigation = useNavigation();
-  console.log(navigation);
+  // console.log(navigation);
 
   if(navigation.state === "loading") return <Loading />;
   
@@ -21,5 +21,3 @@ const AppLayout = () => {
 }
 
 export default AppLayout;
-
-// 04:00
