@@ -437,5 +437,16 @@ idle → loading → idle
 Form submissions with POST, PUT, PATCH, or DELETE transition through these states:
 idle → submitting → loading → idle
 
-# V85: Secure your React App: Get Params Value and Fetch API Data for a Single Movie
-  * 
+# V85: Secure your React App: Using ENV variables to Protect Private Data
+  * A .env file in React is a file that stores environment variables, which are used to configure a React application
+  * Secure sensitive information
+By keeping sensitive information in a separate file, you can share the main codebase without exposing sensitive details. 
+  * Manage configurations
+You can easily manage configurations for different environments, such as development and production. 
+
+* How to use a .env file 
+  * Create a file named .env in the root directory of your React project.
+  * Define environment variables using the KEY=VALUE syntax. For example, REACT_APP_API_KEY=your-api-key.
+  * Access environment variables in your JavaScript code by using process.env. For example, const apiKey = process.env.REACT_APP_API_KEY.
+
+# V86: Dynamic Routing in React: Get Params Value and Fetch API Data for a Single Movie
