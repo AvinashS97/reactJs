@@ -1,28 +1,25 @@
 import { Outlet, useNavigation } from 'react-router-dom'
 import { Footer } from './Footer'
 import { Header } from './Header'
+import { Loading } from './Loading';
 
 const AppLayout = () => {
 
   const navigation = useNavigation();
   console.log(navigation);
+
+  if(navigation.state === "loading") return <Loading />;
   
-  // const text =
-  // navigation.state === "submitting"
-  // ? "Saving..."
-  // : navigation.state === "loading"
-  // ? "Saved!"
-  // : "Go";
-
-  // return <button type="submit"></button>
-
   return (
     <>
       <Header />
       <Outlet />
       <Footer />
+
     </>
   )
 }
 
 export default AppLayout;
+
+// 04:00

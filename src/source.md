@@ -424,3 +424,14 @@ It returns an Array with exactly two values: containing the current state and a 
       * Disabling forms while a mutation is happening
       * Adding busy indicators to submit buttons
       * Optimistically showing the new state of a record while it's being updated
+
+      * navigation.state
+        idle - There is no navigation pending.
+        submitting - A route action is being called due to a form submission using POST, PUT, PATCH, or DELETE
+        loading - The loaders for the next routes are being called to render the next page
+
+Normal navigations and GET form submissions transition through these states:
+idle → loading → idle
+
+Form submissions with POST, PUT, PATCH, or DELETE transition through these states:
+idle → submitting → loading → idle
