@@ -419,7 +419,7 @@ It returns an Array with exactly two values: containing the current state and a 
 
     * useNavigate() Hook: The useNavigate hook returns a function that lets you navigate programmatically.
 
-# V84: Crete Global Loading States:
+# V84: Create Global Loading States:
     * useNavigation Hook: This hook tells you everything you need to know about a page navigation to build pending navigation indicators and optimistic UI on data mutations. Things like:
       * Global loading indicators
       * Disabling forms while a mutation is happening
@@ -450,3 +450,6 @@ You can easily manage configurations for different environments, such as develop
   * Access environment variables in your JavaScript code by using process.env. For example, const apiKey = process.env.REACT_APP_API_KEY.
 
 # V86: Dynamic Routing in React: Get Params Value and Fetch API Data for a Single Movie
+  * Dynamic routing in React using React Router is powerful and enables handling dynamic URLs, parameters, and nested routes efficiently.
+
+# V87: Handle Contact Form Data with React Touter From Component & Action
