@@ -9,6 +9,7 @@ import AppLayout from './components/layout/AppLayout';
 import { ErrorPage } from './pages/ErrorPage';
 import { getMoviesData } from './api/GetAPIData';
 import { MovieDetails } from './components/UI/MovieDetails';
+import { getMovieDetails } from './api/GetMovieDetails';
 // import { NotFound } from './pages/NotFound';
 const App = () => {
 
@@ -34,7 +35,7 @@ const App = () => {
         {
           path:"/movie/:movieID",
           element: <MovieDetails />,
-          // loader: getMovieDetails,
+          loader: getMovieDetails,
         },
         {
           path:"/contact",

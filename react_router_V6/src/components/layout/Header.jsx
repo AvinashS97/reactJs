@@ -58,7 +58,7 @@ export const Header = () => {
 
               <li className='nav-item'>
                 <NavLink
-                  to='movies'
+                  to='movie'
                   className='nav-link'
                   style={getNavLinkStyle}
                 >

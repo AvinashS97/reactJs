@@ -3,7 +3,7 @@ import { Card } from '../components/UI/Card';
 
 export const Movie = () => {
   const moviesData = useLoaderData();
-  console.log(moviesData);
+  // console.log(moviesData);
 
   return (
     <>
