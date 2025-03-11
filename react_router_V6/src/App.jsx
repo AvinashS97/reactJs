@@ -27,13 +27,14 @@ const App = () => {
           element: <About />,
         },
         {
-          path:"/movies",
+          path:"/movie",
           element: <Movie />,
           loader: getMoviesData,
         },
         {
-          path:"/movies/:movieID",
+          path:"/movie/:movieID",
           element: <MovieDetails />,
+          // loader: getMovieDetails,
         },
         {
           path:"/contact",
