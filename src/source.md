@@ -452,7 +452,8 @@ You can easily manage configurations for different environments, such as develop
 # V86: Dynamic Routing in React: Get Params Value and Fetch API Data for a Single Movie
   * Dynamic routing in React using React Router is powerful and enables handling dynamic URLs, parameters, and nested routes efficiently.
 
-  * It returns an object of key/value pairs of the dynamic params from the current URL that were matched by the routes. Child routes inherit all params from their parent routes.
+  * useParams: It returns an object of key/value pairs of the dynamic params from the current URL that were matched by the routes. Child routes inherit all params from their parent routes.
+  * React Hook "useParams" is used in function component.
 
   <import { useParams } from "react-router">
 
