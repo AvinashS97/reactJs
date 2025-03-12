@@ -429,7 +429,7 @@ It returns an Array with exactly two values: containing the current state and a 
       * navigation.state
         idle - There is no navigation pending.
         submitting - A route action is being called due to a form submission using POST, PUT, PATCH, or DELETE
-        loading - The loaders for the next routes are being called to render the next page
+        loading - The loaders for the next routes are being called to render the next page.
 
 Normal navigations and GET form submissions transition through these states:
 idle → loading → idle
@@ -452,4 +452,17 @@ You can easily manage configurations for different environments, such as develop
 # V86: Dynamic Routing in React: Get Params Value and Fetch API Data for a Single Movie
   * Dynamic routing in React using React Router is powerful and enables handling dynamic URLs, parameters, and nested routes efficiently.
 
+  * It returns an object of key/value pairs of the dynamic params from the current URL that were matched by the routes. Child routes inherit all params from their parent routes.
+
+  <import { useParams } from "react-router">
+
+  function SomeComponent() {
+    let params = useParams()
+    params.postId
+  } 
+
+  Assuming a route pattern like /posts/:postId is matched by /posts/123 then params.postId will be "123".
+
 # V87: Handle Contact Form Data with React Touter From Component & Action
+
+If you want to send form data to a backend API, you should use method="POST".

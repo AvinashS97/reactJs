@@ -1,6 +1,6 @@
 export const getMovieDetails = async ({ params }) => {
-  console.log(params)
-  const id = params.movieID
+  console.log(params);
+  const id = params.movieID;
 
   try {
     const response = await fetch(

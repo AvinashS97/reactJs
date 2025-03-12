@@ -34,7 +34,8 @@ const App = () => {
           loader: getMoviesData,
         },
         {
-          path:"/movie/:movieID",
+          path:"/movie/:movieID", 
+          // : It define we are now using dynamic value
           element: <MovieDetails />,
           loader: getMovieDetails,
         },
