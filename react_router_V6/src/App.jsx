@@ -53,7 +53,11 @@ const App = () => {
     },
   ]);
 
-  //? V76: createRoutesFromElements :- 
+  //? V76: createRoutesFromElements :- The createRoutesFromElements function is used with createBrowserRouter to define routes in a structured and readable way. This approach is useful when working with RouterProvider.
+    //* How It Works?
+      //* ✅ createRoutesFromElements converts <Route> elements into an internal route object structure.
+      //* ✅ createBrowserRouter takes the result and creates a router.
+      //* ✅ <RouterProvider> is used to apply the router to the app.
 
   // const router = createBrowserRouter(
   //   createRoutesFromElements(

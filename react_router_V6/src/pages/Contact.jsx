@@ -8,7 +8,7 @@ export const contactData = async ({ request }) => {
     return null;
   } catch (error) {
     console.log(error.message);
-  }
+  };
 };
 
 export const Contact = () => {
