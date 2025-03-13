@@ -52,7 +52,7 @@ export const Header = () => {
                     }
                   }}
                 >
-                  about
+                  About
                 </NavLink>
               </li>
 
@@ -62,7 +62,7 @@ export const Header = () => {
                   className='nav-link'
                   style={getNavLinkStyle}
                 >
-                  movies
+                  Movies
                 </NavLink>
               </li>
 
@@ -73,7 +73,7 @@ export const Header = () => {
                     isActive ? 'nav-link active' : 'nav-link'
                   }
                 >
-                  contact
+                  Contact
                 </NavLink>
               </li>
             </ul>
