@@ -3,7 +3,6 @@
 // Step-3 -> Get the data of the API by using the useLoaderData()
 
 
-
 export const getMoviesData = async() => {
     try {
         const response = await fetch(
