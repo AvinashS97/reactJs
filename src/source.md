@@ -326,9 +326,11 @@ To fix this problem we have Context API in React Js.
   * Consuming Context Data: To access the context data, we use the useContext hook. As a parameter, we pass the entire context to useContext to access all values provided by the Provider.
 
 # V65: The mistake and solutions in useContext hook:
+
   * In the Context API, the data provided by a context can only be accessed by the components that are its children within the component Tree. This means that any component that needs access to the context data must be a desendant of the provider component that supplies the context Value.
 
 # V66: Create Custom Hook in React 19:
+
 * Rules:
     Creating custom hook in React is a powerful way to encapsulate logic
   1. Prefix with use: Custom hook must start with the word 'use'.
@@ -337,13 +339,14 @@ To fix this problem we have Context API in React Js.
   4. Keep Hooks Pure: Hooks should be free from side effects and return values or function that the component can use.
 
 # V67: New "use" hooks in React:
+
 * use can be called inside conditionals like if and loops like for. use is preferred over useContext because it is more flexible.
 
 # V68: Build a React Website with Tailwind CSS:
+
 Here's a summary of hte steps used to implement a Dark/Light mode toggle in React.
 
 ## Create a Context:
-
 const ThemeContext = createContext();
 This context will store the current theme and the function to toggle it.
 
@@ -367,6 +370,7 @@ Adjust the background color, text color, and button lebel according to the curre
 Attach the toggleTheme function to a button's onClick event. This allows the user to switch between light and dark modes by clicking the button.
 
 # V69: useReducer Hook in React:
+
 * Syntax:  <const [state, dispatch] = useReducer (reducer, initialState);> 
 
 It returns an Array with exactly two values: containing the current state and a dispatch function.
@@ -394,30 +398,37 @@ It returns an Array with exactly two values: containing the current state and a 
   * Useful for optimizing performance in situations where calculations or operations are computationally expensive.
   * Overusing useMemo might lead to unnecessary complexity and impact readability.
 
-# V73: React.memo Vs useMemo: 
+# V73: React.memo Vs useMemo:
+
   * useMemo optimize the values in functions. While useCallback used for optimizing functions.
 
 # V74: useCallback Hook in React:
+
   * useCallback and useMemo both are hooks that can be used to optimize application by memoizing values or functions. 
 
 # V75: React Router:
+
   * React Router is a popular JavaScript framework used for handling routing in React applications.
 
 # V76: React Router- createRoutesFromElements:
+
   * createRoutesFromElements is a helper that creates route objects form <Route> elements. It's useful if you prefer to create your routes as JSX instead of objects.
-//? V76: createRoutesFromElements :- The createRoutesFromElements function is used with createBrowserRouter to define routes in a structured and readable way. This approach is useful when working with RouterProvider.
+  * createRoutesFromElements :- The createRoutesFromElements function is used with createBrowserRouter to define routes in a structured and readable way. This approach is useful when working with RouterProvider.
     //* How It Works?
       //* ✅ createRoutesFromElements converts <Route> elements into an internal route object structure.
       //* ✅ createBrowserRouter takes the result and creates a router.
       //* ✅ <RouterProvider> is used to apply the router to the app.
       
 # V77: APPLAYOUT in React:
+
   * Outlet in React Router: An <Outlet> should be used in parent route elements to render their child route elements. This allows nested UI to show up when child routes are rendered. If the parent route matched exactly, it will render a child index route or nothing if there is no index route.
 
 # V77.1: NAVIGATION BAR in React:
+
   * <NavLink> is a special kind of <Link> that knows whether or not it is "active", "pending", or "transitioning". This is useful in a few different scenarios.
 
 # V80: errorElement:
+
   * When exception are thrown in loaders(iske through Data fetch hota hai), actions (), or component rendering, instead of the normal render path your Routes ( <Route element>), the error path will be rendered ( <Route errorElement>) and the error made available with useRouteError.
 
     * useRouterError() Hook: is used in error elements to retrieve errors thrown during navigation or data loading.
@@ -425,6 +436,7 @@ It returns an Array with exactly two values: containing the current state and a 
     * useNavigate() Hook: The useNavigate hook returns a function that lets you navigate programmatically.
 
 # V84: Create Global Loading States:
+
     * useNavigation Hook: This hook tells you everything you need to know about a page navigation to build pending navigation indicators and optimistic UI on data mutations. Things like:
       * Global loading indicators
       * Disabling forms while a mutation is happening
@@ -443,6 +455,7 @@ Form submissions with POST, PUT, PATCH, or DELETE transition through these state
 idle → submitting → loading → idle
 
 # V85: Secure your React App: Using ENV variables to Protect Private Data
+
   * A .env file in React is a file that stores environment variables, which are used to configure a React application
   * Secure sensitive information
 By keeping sensitive information in a separate file, you can share the main codebase without exposing sensitive details. 
@@ -455,6 +468,7 @@ You can easily manage configurations for different environments, such as develop
   * Access environment variables in your JavaScript code by using process.env. For example, const apiKey = process.env.REACT_APP_API_KEY.
 
 # V86: Dynamic Routing in React: Get Params Value and Fetch API Data for a Single Movie
+
   * Dynamic routing in React using React Router is powerful and enables handling dynamic URLs, parameters, and nested routes efficiently.
 
   * useParams: It returns an object of key/value pairs of the dynamic params from the current URL that were matched by the routes. Child routes inherit all params from their parent routes.
