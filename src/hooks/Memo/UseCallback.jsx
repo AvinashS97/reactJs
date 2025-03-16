@@ -1,5 +1,6 @@
 import { memo, useCallback, useState } from "react";
 
+// eslint-disable-next-line react/display-name
 const Button = memo(({ onClick, children}) => {
     console.log(`Rendering button: ${children}`);
 
@@ -43,5 +44,3 @@ export default function UseCallback() {
         </div>
     );
 };
-
-// 08:39 
