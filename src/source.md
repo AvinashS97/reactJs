@@ -483,6 +483,6 @@ You can easily manage configurations for different environments, such as develop
 
   Assuming a route pattern like /posts/:postId is matched by /posts/123 then params.postId will be "123".
 
-# V87: Handle Contact Form Data with React Touter From Component & Action
+# V87: Handle Contact Form Data with React router From Component & Action
 
 If you want to send form data to a backend API, you should use method="POST".
