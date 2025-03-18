@@ -489,4 +489,13 @@ If you want to send form data to a backend API, you should use method="POST".
 
 # V90: Complete AXIOS in React JS
 
-Axios is a popular HTTP client library that simplifies making requests to REST endpoints. It supports the Promise API, making it easier to handle asynchronous operations in JavaScript. In React, Axios is commonly used for performing CRUD operations and communicating with backend servers
+Axios is a popular HTTP client library that simplifies making requests to REST endpoints. It supports the Promise API, making it easier to handle asynchronous operations in JavaScript. In React, Axios is commonly used for performing CRUD operations and communicating with backend servers.
+It allows your website or app to send and receive data from a server, like fetching information, submitting forms, or updating content without reloading the entire page.
+It uses the Promise API to handle http request.
+
+# Why choose AXIOS over FETCH:
+  * Easier syntax and cleaner code.
+  * Automatic JSON transformation without extra code.
+  * Better built-in error handling.
+  * Support for older browser.
+  

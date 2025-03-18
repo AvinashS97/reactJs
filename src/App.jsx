@@ -105,7 +105,7 @@ export const App = () => {
 
       {/* <Footer /> */}
     </section>
-  )
-}
+  );
+};
 
 
