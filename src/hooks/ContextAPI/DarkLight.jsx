@@ -1,6 +1,6 @@
-import { createContext, use, useState } from 'react'
+import { createContext, use, useState } from 'react';
 
-export const ThemeContext = createContext()
+export const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState('dark')
@@ -48,5 +48,5 @@ export const DarkLight = () => {
         {theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
       </button>
     </div>
-  )
-}
+  );
+};

@@ -10,5 +10,5 @@ export const Practices = () => {
       <p>{!students.length && 'No  students found'}</p>
       <p>Number of Students: {students.length}</p>
     </>
-  )
+  );
 };
