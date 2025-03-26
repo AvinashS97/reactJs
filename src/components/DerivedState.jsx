@@ -1,6 +1,6 @@
 // V29 - React Js State Challenge
 
-import { useState } from 'react'
+import { useState } from 'react';
 
 export const DerivedState = () => {
   const [users, setUsers] = useState([
@@ -8,7 +8,7 @@ export const DerivedState = () => {
     { name: 'Bob', age: 30 },
     { name: 'Charlie', age: 35 },
     { name: 'Angles', age: 45 }
-  ])
+  ]);
 
   //  Derived state:- count of users
   console.log(users)
@@ -31,5 +31,5 @@ export const DerivedState = () => {
       <p>Total Users:- {userCount}</p>
       <p>Average Age:- {averageAge}</p>
     </div>
-  )
-}
+  );
+};
