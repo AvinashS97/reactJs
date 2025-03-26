@@ -1,10 +1,10 @@
-import './EV.css'
+import './EV.css';
 //! 23 Event Handling
 
 export const EventHandling = () => {
   // function handleClick () {
   //     alert("Hey ! I am Event Handling ")
-  // }
+  // };
 
   //OR
   const handleClick = event => {
@@ -12,11 +12,11 @@ export const EventHandling = () => {
     console.log(event.target)
     console.log(event.type)
     alert('Hey ! I am onClick Event Handling ')
-  }
+  };
 
   const handleWelcomeUser = user => {
     console.log(`Hello ${user}, Welcome`)
-  }
+  };
 
   return (
     <>
@@ -42,5 +42,5 @@ export const EventHandling = () => {
       </button>{' '}
       <br />
     </>
-  )
-}
+  );
+};
