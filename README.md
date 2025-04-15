@@ -50,6 +50,6 @@ Contributions are welcome! Please feel free to fork the repository, make your ch
 For any questions or inquiries, please reach out to:
 Your Name: [Avinash Kumar](https://github.com/AvinashS97/)
 
-Project Link: [GitHub Repository](https://github.com/AvinashS97/CSS_Projects)
+Project Link: [GitHub Repository](https://github.com/AvinashS97/reactJs)
 
 Happy Coding...👍
