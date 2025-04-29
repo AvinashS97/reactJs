@@ -4,17 +4,17 @@
 export const EventPropagation = () => {
   const handleGrandParent = () => {
     console.log('GrandParent Clicked')
-  }
+  };
 
   const handleParentCick = () => {
     console.log('Parent Clicked')
-  }
+  };
 
   const handleChildClick = event => {
     console.log(event)
     event.stopPropagation()
     console.log('Child Clicked')
-  }
+  };
 
   //   example of default nature Event bubbling
   return (
@@ -33,5 +33,5 @@ export const EventPropagation = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};

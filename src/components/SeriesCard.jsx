@@ -38,7 +38,7 @@ export const SeriesCard = ({ data }) => {
   //   borderRadius: "5px",
   //   fontWeight:"bold",
   //   cursor:"pointer",
-  // }
+  // };
 
   // Styled Component using Style Objects # 21Video
 
@@ -82,8 +82,7 @@ export const SeriesCard = ({ data }) => {
           {/* <span className={`rating ${ratingClass}`} >{rating} </span> */}
           <span className={`${styles.rating} ${ratingClass}`}>{rating} </span>
         </h3>
-        <p className='font-bold text-3xl text-zinc-500 italic'>
-          {' '}
+        <p className='font-bold text-zinc-500 text-3xl italic'>
           Summary: {description}{' '}
         </p>
         <p> Genre: {genre.join(', ')}</p>
@@ -97,5 +96,5 @@ export const SeriesCard = ({ data }) => {
         </a>
       </div>
     </li>
-  )
-}
+  );
+};

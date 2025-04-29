@@ -17,8 +17,8 @@ export const EventProps = () => {
                 onClick={() => HandleWelcomeUser("Avinash")} onMouseEnter={handleHover} 
             />
         </>
-    )
-}
+    );
+};
 
 const WelcomeUser = (props) =>{
     const {onClick, onMouseEnter }= props;
@@ -26,7 +26,7 @@ const WelcomeUser = (props) =>{
         console.log(`Hey User, Welcome`);
         onClick();
         
-    }
+    };
 
     return (
         <>
@@ -34,5 +34,5 @@ const WelcomeUser = (props) =>{
         <button onMouseEnter={onMouseEnter}>Hover Me</button> <br/> 
         <button onClick={handleGreeting}>Greeting</button> <br/>
         </>
-    )
-}
+    );
+};

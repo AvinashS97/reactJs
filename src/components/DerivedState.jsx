@@ -11,7 +11,7 @@ export const DerivedState = () => {
   ]);
 
   //  Derived state:- count of users
-  console.log(users)
+  console.log(users);
   const userCount = users.length
   const averageAge =
     users.reduce((accum, curElem) => accum + curElem.age, 0) / userCount

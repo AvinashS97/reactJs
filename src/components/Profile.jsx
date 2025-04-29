@@ -30,10 +30,10 @@ function Profile () {
         <button>Contact</button>
       </ProfileCard>
     </>
-  )
-}
+  );
+};
 
-export default Profile
+export default Profile;
 
 function ProfileCard ({ name, age, greeting, children }) {
   // const {name, age, greeting, children} = props;
@@ -45,5 +45,5 @@ function ProfileCard ({ name, age, greeting, children }) {
       <p>{greeting}</p>
       <div>{children}</div>
     </>
-  )
-}
+  );
+};

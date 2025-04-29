@@ -129,6 +129,6 @@ const NetflixSeries = () => {
         <SeriesCard key={curElem.id} data={curElem} />
       ))}
     </ul>
-  )
-}
+  );
+};
 export default NetflixSeries;
